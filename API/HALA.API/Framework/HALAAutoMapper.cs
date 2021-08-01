@@ -181,5 +181,18 @@ namespace HALA.API.Framework
 
             return (_mapper = _mapperConfig.CreateMapper());
         }
+
+        public AutoMapper.IMapper GetContentAutoMapper()
+        {
+            _mapperConfig = new AutoMapper.MapperConfiguration(cfg =>
+            {
+                cfg.CreateMap<BLO.GetContentRequest,
+                            RR.GetContentRequest>().ReverseMap();
+                cfg.CreateMap<BLO.GetContentResponse,
+                          RR.GetContentResponse>().ReverseMap();
+
+            });
+            return (_mapper = _mapperConfig.CreateMapper());
+        }
     }
 }

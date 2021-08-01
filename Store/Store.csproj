@@ -332,6 +332,7 @@
     <Content Include="assets\js\components\hs.svg-injector.js" />
     <Content Include="assets\js\components\hs.unfold.js" />
     <Content Include="assets\js\components\hs.validation.js" />
+    <Content Include="assets\js\Content\ContentManagement.js" />
     <Content Include="assets\js\hs.core.js" />
     <Content Include="assets\js\toaster\notific.js" />
     <Content Include="assets\svg\components\wave-bottom-with-dots.svg" />
