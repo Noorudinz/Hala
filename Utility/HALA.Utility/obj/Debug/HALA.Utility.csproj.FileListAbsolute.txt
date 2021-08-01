@@ -1,0 +1,10 @@
+C:\MoveToNewDrive\Noorudin\HALA\HalaWebForms\FrontStoreFrmWrk\Utility\HALA.Utility\bin\Debug\HALA.Utility.dll
+C:\MoveToNewDrive\Noorudin\HALA\HalaWebForms\FrontStoreFrmWrk\Utility\HALA.Utility\bin\Debug\HALA.Utility.pdb
+C:\MoveToNewDrive\Noorudin\HALA\HalaWebForms\FrontStoreFrmWrk\Utility\HALA.Utility\bin\Debug\HALA.DTO.dll
+C:\MoveToNewDrive\Noorudin\HALA\HalaWebForms\FrontStoreFrmWrk\Utility\HALA.Utility\bin\Debug\Newtonsoft.Json.dll
+C:\MoveToNewDrive\Noorudin\HALA\HalaWebForms\FrontStoreFrmWrk\Utility\HALA.Utility\bin\Debug\Newtonsoft.Json.xml
+C:\MoveToNewDrive\Noorudin\HALA\HalaWebForms\FrontStoreFrmWrk\Utility\HALA.Utility\obj\Debug\HALA.Utility.csproj.CoreCompileInputs.cache
+C:\MoveToNewDrive\Noorudin\HALA\HalaWebForms\FrontStoreFrmWrk\Utility\HALA.Utility\obj\Debug\HALA.Utility.csproj.CopyComplete
+C:\MoveToNewDrive\Noorudin\HALA\HalaWebForms\FrontStoreFrmWrk\Utility\HALA.Utility\obj\Debug\HALA.Utility.dll
+C:\MoveToNewDrive\Noorudin\HALA\HalaWebForms\FrontStoreFrmWrk\Utility\HALA.Utility\obj\Debug\HALA.Utility.pdb
+C:\MoveToNewDrive\Noorudin\HALA\HalaWebForms\FrontStoreFrmWrk\Utility\HALA.Utility\obj\Debug\HALA.Utility.csprojAssemblyReference.cache
