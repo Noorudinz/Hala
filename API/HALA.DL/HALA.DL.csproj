@@ -63,13 +63,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BL\Implementation\Admin.cs" />
+    <Compile Include="BL\Implementation\Content.cs" />
     <Compile Include="BL\Implementation\Customer.cs" />
     <Compile Include="BL\Implementation\User.cs" />
     <Compile Include="BL\Repositories\IAdmin.cs" />
     <Compile Include="BL\Repositories\ICustomer.cs" />
+    <Compile Include="BL\Repositories\IContent.cs" />
     <Compile Include="BL\Repositories\IUser.cs" />
     <Compile Include="BO\Admin.cs" />
     <Compile Include="BO\Customer.cs" />
+    <Compile Include="BO\Content.cs" />
     <Compile Include="BO\PageType.cs" />
     <Compile Include="BO\TransactionWrapper.cs" />
     <Compile Include="BO\User.cs" />
@@ -78,6 +81,7 @@
     <Compile Include="HALASQL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StoredProcedures\Admin.cs" />
+    <Compile Include="StoredProcedures\Content.cs" />
     <Compile Include="StoredProcedures\Customer.cs" />
     <Compile Include="Utility.cs" />
   </ItemGroup>
