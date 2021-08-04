@@ -18,11 +18,11 @@ namespace AdminLTE.MVC.Controllers
         {
             _logger = logger;
         }
-[AllowAnonymous]
-    public IActionResult Index()
-{
-    return View();
-}
+        [AllowAnonymous]
+        public IActionResult Index()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {
@@ -33,6 +33,11 @@ namespace AdminLTE.MVC.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public IActionResult Customer()
+        {
+            return View();
         }
     }
 }
