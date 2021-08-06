@@ -5,7 +5,7 @@
 }
 
 <h1>@ViewData["Title"]</h1>
-
+<button type="button" id="btn" class="btn btn-primary">alert</button>
 <div class="box">
     <div class="box-header">
         <h3 class="box-title">Data Table With Full Features</h3>
@@ -450,10 +450,11 @@
 </div>
 
 <!-- page script -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script type="text/javascript">
     $(function () {
         $('#example1').DataTable()
-        $('#example1').DataTable({
+        $('#example2').DataTable({
             'paging': true,
             'lengthChange': false,
             'searching': false,
@@ -463,5 +464,8 @@
         })
     })
 
+    $('#btn').click(function () {
+        alert(1);
+    });
     
 </script>
