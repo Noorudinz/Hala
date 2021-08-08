@@ -16,6 +16,9 @@ namespace AdminLTE.MVC.Models
         public int? AddressId { get; set; }
         public string? UserType { get; set; }
         public bool IsActive { get; set; }
+        public string Password { get; set; }
+        public DateTime? CreatedDate { get; set; }
+        public DateTime? UpdatedDate { get; set; }
     }
 
 

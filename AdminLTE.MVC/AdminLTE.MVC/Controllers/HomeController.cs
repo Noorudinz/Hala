@@ -93,5 +93,52 @@ namespace AdminLTE.MVC.Controllers
             }
 
         }
+
+      
+        [HttpPost]
+        public ActionResult CreateCustomer(CustomerMaster model)
+        {
+            try
+            {
+                model.UserType = "Web";
+                model.IsActive = true;
+                model.CreatedDate = DateTime.Now;
+                model.UpdatedDate = null;
+                _context.CustomerMaster.Add(model);
+                _context.SaveChanges();
+                LoadData();
+
+                return View();
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+        }
+
+        public ActionResult AddEditCustomer(int customerId)
+        {
+            //MVCTutorialEntities db = new MVCTutorialEntities();
+            //List<Department> list = db.Departments.ToList();
+            //ViewBag.DepartmentList = new SelectList(list, "DepartmentId", "DepartmentName");
+
+            CustomerMaster model = new CustomerMaster();
+
+            if (customerId > 0)
+            {
+
+                CustomerMaster emp = _context.CustomerMaster.SingleOrDefault(x => x.CustomerId == customerId && x.IsActive == true); //db.Employees.SingleOrDefault(x => x.EmployeeId == EmployeeId && x.IsDeleted == false);
+                model.CustomerId = emp.CustomerId;
+                model.CustomerName = emp.CustomerName;
+                model.Phone = emp.Phone;
+                model.Email = emp.Email;
+                model.UserType = emp.UserType;
+               
+            }
+            return PartialView("_CreateCustomer", model);
+        }
     }
 }
