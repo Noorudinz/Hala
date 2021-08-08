@@ -1,0 +1,62 @@
+﻿
+@model AdminLTE.MVC.Models.CustomerMaster
+@{
+    Layout = null;
+}
+
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <form id="myForm">
+                  @*@Html.DropDownListFor(model => model.DepartmentId, ViewBag.DepartmentList as SelectList, "--select--", new { @class = "form-control" })*@
+
+                  @Html.TextBoxFor(model => model.CustomerName, new { @class = "form-control ", @placeholder = "Name" })
+                  <br />
+                  @Html.TextBoxFor(model => model.Email, new { @class = "form-control", @placeholder = "Email" })
+                  <br />
+                  @Html.TextBoxFor(model => model.Phone, new { @class = "form-control", @placeholder = "Phone" })
+                  <br />
+                  @Html.TextBoxFor(model => model.Password, new { @class = "form-control", @placeholder = "Password" })
+                  <br />
+                  <a href="#" id="btnSubmit" class="btn btn-success btn-block" data-dismiss="modal">Save</a>
+                  @*@if (Model.CustomerId > 0)
+        {<span>Update</span> }
+        else
+        {<span>Save</span>}*@
+
+
+              </form>
+          </div>             
+      
+      </div>
+  </div>
+
+  <script>
+
+    $(document).ready(function () {
+
+        $("#btnSubmit").click(function () {
+
+            //$("#loaderDiv").show();
+
+            var myformdata = $("#myForm").serialize();
+
+            $.ajax({
+
+                type: "POST",
+                url: "/Home/CreateCustomer",
+                data: myformdata,
+                success: function () {
+                    $("#loaderDiv").hide();
+                    $("#myModal").modal("hide");
+                    window.location.href = "/Home/Customer";
+
+                }
+
+            })
+        })
+
+    })
+
+
+  </script>
