@@ -119,26 +119,10 @@ namespace AdminLTE.MVC.Controllers
 
         }
 
-        public ActionResult AddEditCustomer(int customerId)
-        {
-            //MVCTutorialEntities db = new MVCTutorialEntities();
-            //List<Department> list = db.Departments.ToList();
-            //ViewBag.DepartmentList = new SelectList(list, "DepartmentId", "DepartmentName");
-
-            CustomerMaster model = new CustomerMaster();
-
-            if (customerId > 0)
-            {
-
-                CustomerMaster emp = _context.CustomerMaster.SingleOrDefault(x => x.CustomerId == customerId && x.IsActive == true); //db.Employees.SingleOrDefault(x => x.EmployeeId == EmployeeId && x.IsDeleted == false);
-                model.CustomerId = emp.CustomerId;
-                model.CustomerName = emp.CustomerName;
-                model.Phone = emp.Phone;
-                model.Email = emp.Email;
-                model.UserType = emp.UserType;
-               
-            }
-            return PartialView("_CreateCustomer", model);
+        public ActionResult EditCustomer(int customerId)
+        {       
+           var cust = _context.CustomerMaster.SingleOrDefault(x => x.CustomerId == customerId && x.IsActive == true);           
+           return PartialView("_EditCustomer", cust);
         }
     }
 }
