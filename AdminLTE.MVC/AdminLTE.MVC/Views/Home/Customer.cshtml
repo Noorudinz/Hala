@@ -78,6 +78,20 @@
         </div>
     </div>
 
+    <div class="modal fade" id="myModal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Edit Customer</h3>
+                    <a href="#" class="close" data-dismiss="modal">&times;</a>
+                </div>
+                <div class="modal-body" id="myModalBodyDiv2">
+                    <partial name="_EditCustomer" />
+                </div>
+            </div>
+        </div>
+    </div>
+
     <input type="hidden" id="hiddenEmployeeId" />
 
 
@@ -140,7 +154,7 @@
                 { "data": "isActive", "name": "isActive", "autoWidth": true },
 
                 {
-                    "render": function (data, type, full, meta) { return '<a class="btn btn-info" href="/DemoGrid/Edit/' + full.CustomerID + '">Edit</a>'; }
+                    "render": function (data, type, full, meta) { return '<a class="btn btn-info" href="#" onclick=EditCustomer(' + full.customerId + ');>Edit</a>'; }
                 },
                 {
                     data: null,
@@ -181,6 +195,17 @@ function Delete(CustomerID) {
 
             $("#myModalBodyDiv1").load(url, function () {
                 $("#myModal1").modal("show");
+
+            })
+
+        }
+
+        var EditCustomer = function (customerId) {
+
+            var url = "/Home/EditCustomer?CustomerId=" + customerId;
+
+            $("#myModalBodyDiv2").load(url, function () {
+                $("#myModal2").modal("show");
 
             })
 
