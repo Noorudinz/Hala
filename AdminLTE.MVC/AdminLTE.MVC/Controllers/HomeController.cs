@@ -124,5 +124,41 @@ namespace AdminLTE.MVC.Controllers
            var cust = _context.CustomerMaster.SingleOrDefault(x => x.CustomerId == customerId && x.IsActive == true);           
            return PartialView("_EditCustomer", cust);
         }
+
+        public enum UserType
+        {
+            Web = 1,
+            Google = 2,
+            FaceBook = 3,
+            Twitter = 4
+        }
+
+        [HttpPost]
+        public ActionResult UpdateCustomer(CustomerMaster model)
+        {
+            try
+            {
+                var customer = _context.CustomerMaster.FirstOrDefault(e => e.CustomerId == model.CustomerId);
+
+                if (customer != null)
+                {
+                    customer.CustomerId = model.CustomerId;
+                    customer.CustomerName = model.CustomerName;
+                    customer.Phone = model.Phone;
+                    customer.Email = model.Email;
+                    customer.UpdatedDate = DateTime.Now;
+                    LoadData();
+                }
+
+                return View();
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+        }
     }
 }
