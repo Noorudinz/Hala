@@ -24,9 +24,10 @@ namespace AdminLTE.MVC.Controllers
         [AllowAnonymous]
         public IActionResult Index()
         {
+            ViewBag.TotalUserRegister = _context.CustomerMaster.Count();
             return View();
         }
-
+      
         public IActionResult Privacy()
         {
             return View();
@@ -137,17 +138,18 @@ namespace AdminLTE.MVC.Controllers
         public ActionResult UpdateCustomer(CustomerMaster model)
         {
             try
-            {
-                var customer = _context.CustomerMaster.FirstOrDefault(e => e.CustomerId == model.CustomerId);
-
-                if (customer != null)
+            {    
+                
+                if (model != null)
                 {
-                    customer.CustomerId = model.CustomerId;
+                    var customer = _context.CustomerMaster.SingleOrDefault(x => x.CustomerId == model.CustomerId && x.IsActive == true);
                     customer.CustomerName = model.CustomerName;
-                    customer.Phone = model.Phone;
                     customer.Email = model.Email;
+                    customer.Phone = model.Phone;
                     customer.UpdatedDate = DateTime.Now;
-                    LoadData();
+                    _context.Update(customer);
+                    _context.SaveChanges();
+                    //LoadData();
                 }
 
                 return View();
@@ -160,5 +162,22 @@ namespace AdminLTE.MVC.Controllers
             }
 
         }
+
+        public ActionResult DeleteCustomer(int ID)
+        {
+            var cust = _context.CustomerMaster.SingleOrDefault(x => x.CustomerId == ID && x.IsActive == true);
+
+            if (cust != null)
+            {
+                cust.IsActive = false;
+                cust.UpdatedDate = DateTime.Now;
+                _context.Update(cust);
+                _context.SaveChanges();
+                //LoadData();
+            }
+
+            return View();
+        }
+
     }
 }

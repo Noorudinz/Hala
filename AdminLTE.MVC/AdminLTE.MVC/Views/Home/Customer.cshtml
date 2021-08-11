@@ -1,10 +1,9 @@
 ﻿
 @{
-    ViewData["Title"] = "Customer Details";
     Layout = "~/Views/Shared/AdminLTE/_Layout.cshtml";
 }
 
-<h1>@ViewData["Title"]</h1>
+<h1>Customer Register Details</h1>
 
 <style>
     .status {
@@ -93,16 +92,17 @@
     </div>
 
     <input type="hidden" id="hiddenEmployeeId" />
+</div>
 
 
-    <!-- page script -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- page script -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <script src="~/plugins/jquery-validation/jquery.validate.js"></script>
-    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
-    <script src="~/plugins/jquery-ui/jquery-ui.js"></script>
-    <script type="text/javascript">
+<script src="~/plugins/jquery-validation/jquery.validate.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+<script src="~/plugins/jquery-ui/jquery-ui.js"></script>
+<script type="text/javascript">
     //$(function () {
     //    $('#example1').DataTable()
     //    $('#example2').DataTable({
@@ -116,7 +116,7 @@
     //})
 
     $(document).ready(function () {
-        $("#dtCustomerMaster").DataTable({
+         $("#dtCustomerMaster").DataTable({
             "processing": true, // for show progress bar
             "serverSide": true, // for process server side
             "filter": true, // this is for disable filter (search box)
@@ -159,7 +159,7 @@
                 {
                     data: null,
                     render: function (data, type, row) {
-                        return "<a href='#' class='btn btn-danger' onclick=DeleteData('" + row.CustomerID + "'); >Delete</a>";
+                        return "<a href='#' class='btn btn-danger' onclick=DeleteData('" + row.customerId + "'); >Delete</a>";
                     }
                 },
             ]
@@ -167,27 +167,27 @@
         });
     });
 
-    function DeleteData(CustomerID) {
-    if (confirm("Are you sure you want to delete ...?")) {
-        Delete(CustomerID);
-    } else {
-        return false;
-    }
-}
-
-
-function Delete(CustomerID) {
-    var url = '@Url.Content("~/")' + "DemoGrid/Delete";
-
-    $.post(url, { ID: CustomerID }, function(data) {
-        if (data) {
-            oTable = $('#example').DataTable();
-            oTable.draw();
-        } else {
-            alert("Something Went Wrong!");
+        function DeleteData(customerId) {
+            if (confirm("Are you sure you want to delete ...?" + customerId)) {
+                Delete(customerId);
+            } else {
+                return false;
+            }
         }
-    });
-    }
+
+
+        function Delete(customerId) {
+        var url = '@Url.Content("~/")' + "Home/DeleteCustomer";
+
+        $.post(url, { ID: customerId }, function(data) {
+            if (data) {
+                oTable = $('#dtCustomerMaster').DataTable();
+                oTable.draw();
+            } else {
+                alert("Something Went Wrong!");
+            }
+        });
+        }
 
         var AddEditCustomer= function (customerId) {
 
@@ -211,4 +211,4 @@ function Delete(CustomerID) {
 
         }
 
-    </script>
+</script>

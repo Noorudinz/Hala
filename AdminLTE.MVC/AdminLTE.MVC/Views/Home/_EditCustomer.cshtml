@@ -7,7 +7,7 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
-            <form id="myForm">
+            <form id="myFormUpdate">
                 @*@Html.DropDownListFor(model => model.DepartmentId, ViewBag.DepartmentList as SelectList, "--select--", new { @class = "form-control" })*@
 
                 @Html.HiddenFor(model => model.CustomerId)
@@ -34,7 +34,7 @@
                 </div>
 
                
-                <a href="#" id="btnSubmit" class="btn btn-success btn-block" data-dismiss="modal">Update</a>
+                <a href="#" id="btnSubmitUpdate" class="btn btn-success btn-block" data-dismiss="modal">Update</a>
              
             </form>
         </div>
@@ -46,11 +46,9 @@
 
     $(document).ready(function () {
 
-        $("#btnSubmit").click(function () {
+        $("#btnSubmitUpdate").click(function () {
 
-            //$("#loaderDiv").show();
-
-            var myformdata = $("#myForm").serialize();
+            var myformdata = $("#myFormUpdate").serialize();
             alert(JSON.stringify(myformdata));
             $.ajax({
 
