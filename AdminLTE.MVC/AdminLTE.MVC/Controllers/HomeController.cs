@@ -24,9 +24,10 @@ namespace AdminLTE.MVC.Controllers
         [AllowAnonymous]
         public IActionResult Index()
         {
+            ViewBag.TotalUserRegister = _context.CustomerMaster.Count();
             return View();
         }
-
+      
         public IActionResult Privacy()
         {
             return View();
@@ -124,5 +125,59 @@ namespace AdminLTE.MVC.Controllers
            var cust = _context.CustomerMaster.SingleOrDefault(x => x.CustomerId == customerId && x.IsActive == true);           
            return PartialView("_EditCustomer", cust);
         }
+
+        public enum UserType
+        {
+            Web = 1,
+            Google = 2,
+            FaceBook = 3,
+            Twitter = 4
+        }
+
+        [HttpPost]
+        public ActionResult UpdateCustomer(CustomerMaster model)
+        {
+            try
+            {    
+                
+                if (model != null)
+                {
+                    var customer = _context.CustomerMaster.SingleOrDefault(x => x.CustomerId == model.CustomerId && x.IsActive == true);
+                    customer.CustomerName = model.CustomerName;
+                    customer.Email = model.Email;
+                    customer.Phone = model.Phone;
+                    customer.UpdatedDate = DateTime.Now;
+                    _context.Update(customer);
+                    _context.SaveChanges();
+                    //LoadData();
+                }
+
+                return View();
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+        }
+
+        public ActionResult DeleteCustomer(int ID)
+        {
+            var cust = _context.CustomerMaster.SingleOrDefault(x => x.CustomerId == ID && x.IsActive == true);
+
+            if (cust != null)
+            {
+                cust.IsActive = false;
+                cust.UpdatedDate = DateTime.Now;
+                _context.Update(cust);
+                _context.SaveChanges();
+                //LoadData();
+            }
+
+            return View();
+        }
+
     }
 }

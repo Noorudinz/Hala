@@ -7,26 +7,65 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
-            <form id="myForm">
+            <form id="myFormUpdate">
                 @*@Html.DropDownListFor(model => model.DepartmentId, ViewBag.DepartmentList as SelectList, "--select--", new { @class = "form-control" })*@
 
-                @Html.TextBoxFor(model => model.CustomerName, new { @class = "form-control ", @placeholder = "Name" })
-                <br />
-                @Html.TextBoxFor(model => model.Email, new { @class = "form-control", @placeholder = "Email" })
-                <br />
-                @Html.TextBoxFor(model => model.Phone, new { @class = "form-control", @placeholder = "Phone" })
-                <br />
-                @Html.TextBoxFor(model => model.Password, new { @class = "form-control", @placeholder = "Password" })
-                <br />
-                <a href="#" id="btnSubmit" class="btn btn-success btn-block" data-dismiss="modal">Update</a>
-                @*@if (Model.CustomerId > 0)
-                    {<span>Update</span> }
-                    else
-                    {<span>Save</span>}*@
+                @Html.HiddenFor(model => model.CustomerId)
 
+                <div class="form-group">
+                    @Html.LabelFor(model => model.CustomerName, new { @class = "col-sm-2 control-label" })
+                    <div class="col-sm-10">
+                        @Html.TextBoxFor(model => model.CustomerName, new { @class = "form-control ", @placeholder = "Name" })
+                    </div>
+                </div>
 
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Email, new { @class = "col-sm-2 control-label" })
+                    <div class="col-sm-10">
+                        @Html.TextBoxFor(model => model.Email, new { @class = "form-control ", @placeholder = "Name" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Phone, new { @class = "col-sm-2 control-label" })
+                    <div class="col-sm-10">
+                        @Html.TextBoxFor(model => model.Phone, new { @class = "form-control ", @placeholder = "Name" })
+                    </div>
+                </div>
+
+               
+                <a href="#" id="btnSubmitUpdate" class="btn btn-success btn-block" data-dismiss="modal">Update</a>
+             
             </form>
         </div>
 
     </div>
 </div>
+
+<script>
+
+    $(document).ready(function () {
+
+        $("#btnSubmitUpdate").click(function () {
+
+            var myformdata = $("#myFormUpdate").serialize();
+            alert(JSON.stringify(myformdata));
+            $.ajax({
+
+                type: "POST",
+                url: "/Home/UpdateCustomer",
+                data: myformdata,
+                success: function () {
+                    $("#loaderDiv").hide();
+                    $("#myModal2").modal("hide");
+                    window.location.href = "/Home/Customer";
+
+                }
+
+            })
+        })
+
+    })
+
+
+</script>
