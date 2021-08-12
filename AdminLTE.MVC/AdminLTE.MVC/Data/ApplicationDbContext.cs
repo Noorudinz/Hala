@@ -15,5 +15,6 @@ namespace AdminLTE.MVC.Data
         }
 
         public DbSet<CustomerMaster> CustomerMaster { get; set; }
+        public DbSet<HomeBannerRTB> Contents { get; set; }
     }
 }
