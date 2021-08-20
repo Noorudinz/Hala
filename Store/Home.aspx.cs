@@ -13,6 +13,7 @@ using System.Text;
 using ASPSnippets.GoogleAPI;
 using BDO = HALA.DTO.RequestResponseWrappers;
 using ASPSnippets.FaceBookAPI;
+using System.Data;
 
 namespace Store
 {
@@ -48,7 +49,7 @@ namespace Store
         {
             if (!IsPostBack)
             {
-
+                LoadHomeBanner();
                 if (!string.IsNullOrEmpty(Request.QueryString["code"]))
                 {
                     GeneralMaster master = new GeneralMaster();
@@ -237,7 +238,36 @@ namespace Store
             }          
         }
 
-     
+        public void LoadHomeBanner()
+        {
+            try
+            {
+
+                var service = CommonMethods.GetLogedInService();
+
+                var url = HALA.DTO.Constants
+                      .ContentURI.FetchHomeMainBanner
+                      .Replace("{type}", "HOME_MAIN_BANNER");
+
+                var results = service.GetData<HALA.DTO.RequestResponseWrappers.ApiResponse
+                          <HALA.DTO.RequestResponseWrappers.GetContentResponse>>(url);
+
+                DataTable dt = new DataTable();
+
+                dt.Columns.Add("ContentDetails");
+                dt.Rows.Add(results.Result.Content);
+
+                HomeBanner.DataSource = dt;
+                HomeBanner.DataBind();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+
 
     }
 }

@@ -190,39 +190,39 @@ namespace Store
 
         }
 
-        [WebMethod]
-        public string HomeBanner(string type)
-        {
-            try
-            {
+        //[WebMethod]
+        //public string HomeBanner(string type)
+        //{
+        //    try
+        //    {
 
-                string getBanner = null;
-                var service = CommonMethods.GetLogedInService();
+        //        string getBanner = null;
+        //        var service = CommonMethods.GetLogedInService();
 
-                var url = HALA.DTO.Constants
-                      .ContentURI.FetchHomeMainBanner
-                      .Replace("{type}", type.ToString());
+        //        var url = HALA.DTO.Constants
+        //              .ContentURI.FetchHomeMainBanner
+        //              .Replace("{type}", type.ToString());
 
-                 var results = service.GetData<HALA.DTO.RequestResponseWrappers.ApiResponse
-                           <HALA.DTO.RequestResponseWrappers.GetContentResponse>>(url);
-
-
-                var userInfo = CommonMethods.GetUserDetails();
-
-                if (results.Result.Content != null && results.StatusCode == 200)
-                {
-                    getBanner = JsonConvert.SerializeObject(results.Result.Content);
-                }
-
-                return getBanner;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+        //         var results = service.GetData<HALA.DTO.RequestResponseWrappers.ApiResponse
+        //                   <HALA.DTO.RequestResponseWrappers.GetContentResponse>>(url);
 
 
-        }
+        //        var userInfo = CommonMethods.GetUserDetails();
+
+        //        if (results.Result.Content != null && results.StatusCode == 200)
+        //        {
+        //            getBanner = JsonConvert.SerializeObject(results.Result.Content);
+        //        }
+
+        //        return getBanner;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+
+
+        //}
 
 
     }

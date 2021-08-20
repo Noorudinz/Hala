@@ -4,110 +4,18 @@
 
     <main id="content" role="main">
         <!-- Slider Section -->
-        <div class="mb-5" id="HomeBanner">
+        <div class="mb-5">
             <div class="bg-img-hero overflow-hidden" style="background-image: url(../../assets/img/1920X422/img1.jpg);">
                 <div class="container min-height-420 overflow-hidden">
                     <div class="js-slick-carousel u-slick"
-                         data-pagi-classes="text-center position-absolute right-0 bottom-0 left-0 u-slick__pagination u-slick__pagination--long justify-content-start mb-3 mb-md-4 offset-xl-3 pl-2 pb-1">                     
-                        <div class="js-slide bg-img-hero-center">
-                            <div class="row min-height-420 py-7 py-md-0">
-                                <div class="offset-xl-3 col-xl-4 col-6 mt-md-8">
-                                    <h1 class="font-size-64 text-lh-57 font-weight-light"
-                                        data-scs-animation-in="fadeInUp">
-                                        THE NEW <span class="d-block font-size-55">STANDARD</span>
-                                    </h1>
-                                    <h6 class="font-size-15 font-weight-bold mb-3"
-                                        data-scs-animation-in="fadeInUp"
-                                        data-scs-animation-delay="200">
-                                        UNDER FAVORABLE SMARTWATCHES
-                                    </h6>
-                                    <div class="mb-4"
-                                         data-scs-animation-in="fadeInUp"
-                                         data-scs-animation-delay="300">
-                                        <span class="font-size-13">FROM</span>
-                                        <div class="font-size-50 font-weight-bold text-lh-45">
-                                            <sup class="">$</sup>749<sup class="">99</sup>
-                                        </div>
-                                    </div>
-                                    <a href="../shop/single-product-fullwidth.html" class="btn btn-primary transition-3d-hover rounded-lg font-weight-normal py-2 px-md-7 px-3 font-size-16"
-                                       data-scs-animation-in="fadeInUp"
-                                       data-scs-animation-delay="400">
-                                        Start Buying
-                                    </a>
-                                </div>
-                                <div class="col-xl-5 col-6  d-flex align-items-center"
-                                     data-scs-animation-in="zoomIn"
-                                     data-scs-animation-delay="500">
-                                    <img class="img-fluid" src="../../assets/img/416X420/img1.png" alt="Image Description">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="js-slide bg-img-hero-center" data-animation-delay="0">
-                            <div class="row min-height-420 py-7 py-md-0">
-                                <div class="offset-xl-3 col-xl-4 col-6 mt-md-8">
-                                    <h1 class="font-size-64 text-lh-57 font-weight-light"
-                                        data-scs-animation-in="fadeInUp">
-                                        THE NEW <span class="d-block font-size-55">STANDARD</span>
-                                    </h1>
-                                    <h6 class="font-size-15 font-weight-bold mb-3"
-                                        data-scs-animation-in="fadeInUp"
-                                        data-scs-animation-delay="200">
-                                        UNDER FAVORABLE SMARTWATCHES
-                                    </h6>
-                                    <div class="mb-4"
-                                         data-scs-animation-in="fadeInUp"
-                                         data-scs-animation-delay="300">
-                                        <span class="font-size-13">FROM</span>
-                                        <div class="font-size-50 font-weight-bold text-lh-45">
-                                            <sup class="">$</sup>749<sup class="">99</sup>
-                                        </div>
-                                    </div>
-                                    <a href="../shop/single-product-fullwidth.html" class="btn btn-primary transition-3d-hover rounded-lg font-weight-normal py-2 px-md-7 px-3 font-size-16"
-                                       data-scs-animation-in="fadeInUp"
-                                       data-scs-animation-delay="400">
-                                        Start Buying
-                                    </a>
-                                </div>
-                                <div class="col-xl-5 col-6  d-flex align-items-center"
-                                     data-scs-animation-in="fadeInUp"
-                                     data-scs-animation-delay="500">
-                                    <img class="img-fluid" src="../../assets/img/416X420/img2.png" alt="Image Description">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="js-slide bg-img-hero-center" data-animation-delay="0">
-                            <div class="row min-height-420 py-7 py-md-0">
-                                <div class="offset-xl-3 col-xl-4 col-6 mt-md-8">
-                                    <h1 class="font-size-64 text-lh-57 font-weight-light"
-                                        data-scs-animation-in="fadeInUp">
-                                        THE NEW <span class="d-block font-size-55">STANDARD</span>
-                                    </h1>
-                                    <h6 class="font-size-15 font-weight-bold mb-3"
-                                        data-scs-animation-in="fadeInUp"
-                                        data-scs-animation-delay="200">
-                                        UNDER FAVORABLE SMARTWATCHES
-                                    </h6>
-                                    <div class="mb-4"
-                                         data-scs-animation-in="fadeInUp"
-                                         data-scs-animation-delay="300">
-                                        <span class="font-size-13">FROM</span>
-                                        <div class="font-size-50 font-weight-bold text-lh-45">
-                                            <sup class="">$</sup>749<sup class="">99</sup>
-                                        </div>
-                                    </div>
-                                    <a href="../shop/single-product-fullwidth.html" class="btn btn-primary transition-3d-hover rounded-lg font-weight-normal py-2 px-md-7 px-3 font-size-15"
-                                       data-scs-animation-in="fadeInUp"
-                                       data-scs-animation-delay="400">
-                                        Start Buying
-                                    </a>
-                                </div>
-                                <div class="col-xl-5 col-6  d-flex align-items-center"
-                                     data-scs-animation-in="fadeInRight"
-                                     data-scs-animation-delay="500">
-                                    <img class="img-fluid" src="../../assets/img/416X420/img3.png" alt="Image Description">
-                                </div>
-                            </div>
-                        </div>
+                        data-pagi-classes="text-center position-absolute right-0 bottom-0 left-0 u-slick__pagination u-slick__pagination--long justify-content-start mb-3 mb-md-4 offset-xl-3 pl-2 pb-1">
+                     
+                        <asp:Repeater runat="server" id="HomeBanner">
+                            <ItemTemplate>
+                                <%#Eval("ContentDetails")%>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                      
                     </div>
                 </div>
             </div>
@@ -199,7 +107,7 @@
                     </div>
                 </div>
             </div>
-            <!-- End Banner --> 
+            <!-- End Banner -->
         </div>
 
         <div class="container">
@@ -210,15 +118,15 @@
                     <ul class="nav nav-classic nav-tab justify-content-center" id="pills-tab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active js-animation-link" id="pills-one-example1-tab" data-toggle="pill" href="#pills-one-example1" role="tab" aria-controls="pills-one-example1" aria-selected="true"
-                               data-target="#pills-one-example1"
-                               data-link-group="groups"
-                               data-animation-in="slideInUp">
+                                data-target="#pills-one-example1"
+                                data-link-group="groups"
+                                data-animation-in="slideInUp">
                                 <div class="d-md-flex justify-content-md-center align-items-md-center">
                                     On Sale
                                 </div>
                             </a>
                         </li>
-                       
+
                     </ul>
                 </div>
                 <!-- End Nav Classic -->
@@ -232,15 +140,16 @@
                                         <div class="product-item__body pb-xl-2">
                                             <div class="mb-2"><a href="#" class="font-size-12 text-gray-5">Speakers</a></div>
                                             <h5 class="mb-1 product-item__title"><a href="#" class="text-blue font-weight-bold">Wireless Audio System Multiroom 360 degree Full base audio</a></h5>
-                                            <div class="mb-2">							
-                                           <a href="ProductDetail.aspx" class="d-block text-center"><img class="img-fluid" src="../../assets/img/212x200/img1.jpg" alt="image description"></a> 
-											
+                                            <div class="mb-2">
+                                                <a href="ProductDetail.aspx" class="d-block text-center">
+                                                    <img class="img-fluid" src="../../assets/img/212x200/img1.jpg" alt="image description"></a>
+
                                             </div>
                                             <div class="flex-center-between mb-1">
                                                 <div class="prodcut-price">
                                                     <div class="text-gray-100">₹685.00</div>
                                                 </div>
-                                               <%-- <div class="d-none d-xl-block prodcut-add-cart my-cart-btn">
+                                                <%-- <div class="d-none d-xl-block prodcut-add-cart my-cart-btn">
                                                     <a href="#" class="btn-add-cart btn-primary transition-3d-hover"><i class="ec ec-add-to-cart"></i></a>
                                                 </div>--%>
                                             </div>
@@ -261,14 +170,15 @@
                                             <div class="mb-2"><a href="#" class="font-size-12 text-gray-5">Speakers</a></div>
                                             <h5 class="mb-1 product-item__title"><a href="ProductDetail.aspx" class="text-blue font-weight-bold">Tablet White EliteBook Revolve 810 G2</a></h5>
                                             <div class="mb-2">
-                                                <a href="ProductDetail.aspx" class="d-block text-center"><img class="img-fluid" src="../../assets/img/212X200/img2.jpg" alt="Image Description"></a>
+                                                <a href="ProductDetail.aspx" class="d-block text-center">
+                                                    <img class="img-fluid" src="../../assets/img/212X200/img2.jpg" alt="Image Description"></a>
                                             </div>
                                             <div class="flex-center-between mb-1">
                                                 <div class="prodcut-price d-flex align-items-center position-relative">
                                                     <ins class="font-size-20 text-red text-decoration-none">₹1999,00</ins>
                                                     <del class="font-size-12 tex-gray-6 position-absolute bottom-100">₹2299,00</del>
                                                 </div>
-                                               <%-- <div class="d-none d-xl-block prodcut-add-cart">
+                                                <%-- <div class="d-none d-xl-block prodcut-add-cart">
                                                     <a href="ProductDetail.aspx" class="btn-add-cart btn-primary transition-3d-hover"><i class="ec ec-add-to-cart"></i></a>
                                                 </div>--%>
                                             </div>
@@ -289,13 +199,14 @@
                                             <div class="mb-2"><a href="#" class="font-size-12 text-gray-5">Speakers</a></div>
                                             <h5 class="mb-1 product-item__title"><a href="ProductDetail.aspx" class="text-blue font-weight-bold">Purple Solo 2 Wireless</a></h5>
                                             <div class="mb-2">
-                                                <a href="ProductDetail.aspx" class="d-block text-center"><img class="img-fluid" src="../../assets/img/212X200/img3.jpg" alt="Image Description"></a>
+                                                <a href="ProductDetail.aspx" class="d-block text-center">
+                                                    <img class="img-fluid" src="../../assets/img/212X200/img3.jpg" alt="Image Description"></a>
                                             </div>
                                             <div class="flex-center-between mb-1">
                                                 <div class="prodcut-price">
                                                     <div class="text-gray-100">₹685,00</div>
                                                 </div>
-                                               <%-- <div class="d-none d-xl-block prodcut-add-cart">
+                                                <%-- <div class="d-none d-xl-block prodcut-add-cart">
                                                     <a href="ProductDetail.aspx" class="btn-add-cart btn-primary transition-3d-hover"><i class="ec ec-add-to-cart"></i></a>
                                                 </div>--%>
                                             </div>
@@ -316,13 +227,14 @@
                                             <div class="mb-2"><a href="ProductDetail.aspx" class="font-size-12 text-gray-5">Speakers</a></div>
                                             <h1 class="mb-1 product-item__title"><a href="../shop/single-product-fullwidth.html" class="text-blue font-weight-bold">Smartphone 6S 32GB LTE</a></h1>
                                             <div class="mb-2">
-                                                <a href="ProductDetail.aspx" class="d-block text-center"><img class="img-fluid" src="../../assets/img/212X200/img4.jpg" alt="Image Description"></a>
+                                                <a href="ProductDetail.aspx" class="d-block text-center">
+                                                    <img class="img-fluid" src="../../assets/img/212X200/img4.jpg" alt="Image Description"></a>
                                             </div>
                                             <div class="flex-center-between mb-1">
                                                 <div class="prodcut-price">
                                                     <div class="text-gray-100">₹685,00</div>
                                                 </div>
-                                           <%--     <div class="d-none d-xl-block prodcut-add-cart">
+                                                <%--     <div class="d-none d-xl-block prodcut-add-cart">
                                                     <a href="ProductDetail.aspx" class="btn-add-cart btn-primary transition-3d-hover"><i class="ec ec-add-to-cart"></i></a>
                                                 </div>--%>
                                             </div>
@@ -343,13 +255,14 @@
                                             <div class="mb-2"><a href="#" class="font-size-12 text-gray-5">Speakers</a></div>
                                             <h5 class="mb-1 product-item__title"><a href="../shop/single-product-fullwidth.html" class="text-blue font-weight-bold">Widescreen NX Mini F1 SMART NX</a></h5>
                                             <div class="mb-2">
-                                                <a href="ProductDetail.aspx" class="d-block text-center"><img class="img-fluid" src="../../assets/img/212X200/img5.jpg" alt="Image Description"></a>
+                                                <a href="ProductDetail.aspx" class="d-block text-center">
+                                                    <img class="img-fluid" src="../../assets/img/212X200/img5.jpg" alt="Image Description"></a>
                                             </div>
                                             <div class="flex-center-between mb-1">
                                                 <div class="prodcut-price">
                                                     <div class="text-gray-100">₹685,00</div>
                                                 </div>
-                                               <%-- <div class="d-none d-xl-block prodcut-add-cart">
+                                                <%-- <div class="d-none d-xl-block prodcut-add-cart">
                                                     <a href="ProductDetail.aspx" class="btn-add-cart btn-primary transition-3d-hover"><i class="ec ec-add-to-cart"></i></a>
                                                 </div>--%>
                                             </div>
@@ -370,7 +283,8 @@
                                             <div class="mb-2"><a href="#" class="font-size-12 text-gray-5">Speakers</a></div>
                                             <h5 class="mb-1 product-item__title"><a href="ProductDetail.aspx" class="text-blue font-weight-bold">Purple Solo 2 Wireless</a></h5>
                                             <div class="mb-2">
-                                                <a href="ProductDetail.aspx" class="d-block text-center"><img class="img-fluid" src="../../assets/img/212X200/img3.jpg" alt="Image Description"></a>
+                                                <a href="ProductDetail.aspx" class="d-block text-center">
+                                                    <img class="img-fluid" src="../../assets/img/212X200/img3.jpg" alt="Image Description"></a>
                                             </div>
                                             <div class="flex-center-between mb-1">
                                                 <div class="prodcut-price">
@@ -397,7 +311,8 @@
                                             <div class="mb-2"><a href="#" class="font-size-12 text-gray-5">Speakers</a></div>
                                             <h5 class="mb-1 product-item__title"><a href="ProductDetail.aspx" class="text-blue font-weight-bold">Tablet White EliteBook Revolve 810 G2</a></h5>
                                             <div class="mb-2">
-                                                <a href="ProductDetail.aspx" class="d-block text-center"><img class="img-fluid" src="../../assets/img/212X200/img2.jpg" alt="Image Description"></a>
+                                                <a href="ProductDetail.aspx" class="d-block text-center">
+                                                    <img class="img-fluid" src="../../assets/img/212X200/img2.jpg" alt="Image Description"></a>
                                             </div>
                                             <div class="flex-center-between mb-1">
                                                 <div class="prodcut-price d-flex align-items-center position-relative">
@@ -420,74 +335,74 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                 </div>
                 <!-- End Tab Content -->
             </div>
             <!-- End Tab Prodcut Section -->
 
-               <!-- Feature List -->
-                <div class="mb-6 row border rounded-lg mx-0 flex-nowrap flex-xl-wrap overflow-auto overflow-xl-visble">
-                    <!-- Feature List -->
-                    <div class="media col px-6 px-xl-4 px-wd-8 flex-shrink-0 flex-xl-shrink-1 min-width-270-all py-3">
-                        <div class="u-avatar mr-2">
-                            <i class="text-primary ec ec-transport font-size-46"></i>
-                        </div>
-                        <div class="media-body text-center">
-                            <span class="d-block font-weight-bold text-dark">Free Delivery</span>
-                            <div class=" text-secondary">from $50</div>
-                        </div>
+            <!-- Feature List -->
+            <div class="mb-6 row border rounded-lg mx-0 flex-nowrap flex-xl-wrap overflow-auto overflow-xl-visble">
+                <!-- Feature List -->
+                <div class="media col px-6 px-xl-4 px-wd-8 flex-shrink-0 flex-xl-shrink-1 min-width-270-all py-3">
+                    <div class="u-avatar mr-2">
+                        <i class="text-primary ec ec-transport font-size-46"></i>
                     </div>
-                    <!-- End Feature List -->
+                    <div class="media-body text-center">
+                        <span class="d-block font-weight-bold text-dark">Free Delivery</span>
+                        <div class=" text-secondary">from $50</div>
+                    </div>
+                </div>
+                <!-- End Feature List -->
 
-                    <!-- Feature List -->
-                    <div class="media col px-6 px-xl-4 px-wd-8 flex-shrink-0 flex-xl-shrink-1 min-width-270-all border-left py-3">
-                        <div class="u-avatar mr-2">
-                            <i class="text-primary ec ec-customers font-size-56"></i>
-                        </div>
-                        <div class="media-body text-center">
-                            <span class="d-block font-weight-bold text-dark">99 % Customer</span>
-                            <div class=" text-secondary">Feedbacks</div>
-                        </div>
+                <!-- Feature List -->
+                <div class="media col px-6 px-xl-4 px-wd-8 flex-shrink-0 flex-xl-shrink-1 min-width-270-all border-left py-3">
+                    <div class="u-avatar mr-2">
+                        <i class="text-primary ec ec-customers font-size-56"></i>
                     </div>
-                    <!-- End Feature List -->
+                    <div class="media-body text-center">
+                        <span class="d-block font-weight-bold text-dark">99 % Customer</span>
+                        <div class=" text-secondary">Feedbacks</div>
+                    </div>
+                </div>
+                <!-- End Feature List -->
 
-                    <!-- Feature List -->
-                    <div class="media col px-6 px-xl-4 px-wd-8 flex-shrink-0 flex-xl-shrink-1 min-width-270-all border-left py-3">
-                        <div class="u-avatar mr-2">
-                            <i class="text-primary ec ec-returning font-size-46"></i>
-                        </div>
-                        <div class="media-body text-center">
-                            <span class="d-block font-weight-bold text-dark">365 Days</span>
-                            <div class=" text-secondary">for free return</div>
-                        </div>
+                <!-- Feature List -->
+                <div class="media col px-6 px-xl-4 px-wd-8 flex-shrink-0 flex-xl-shrink-1 min-width-270-all border-left py-3">
+                    <div class="u-avatar mr-2">
+                        <i class="text-primary ec ec-returning font-size-46"></i>
                     </div>
-                    <!-- End Feature List -->
+                    <div class="media-body text-center">
+                        <span class="d-block font-weight-bold text-dark">365 Days</span>
+                        <div class=" text-secondary">for free return</div>
+                    </div>
+                </div>
+                <!-- End Feature List -->
 
-                    <!-- Feature List -->
-                    <div class="media col px-6 px-xl-4 px-wd-8 flex-shrink-0 flex-xl-shrink-1 min-width-270-all border-left py-3">
-                        <div class="u-avatar mr-2">
-                            <i class="text-primary ec ec-payment font-size-46"></i>
-                        </div>
-                        <div class="media-body text-center">
-                            <span class="d-block font-weight-bold text-dark">Payment</span>
-                            <div class=" text-secondary">Secure System</div>
-                        </div>
+                <!-- Feature List -->
+                <div class="media col px-6 px-xl-4 px-wd-8 flex-shrink-0 flex-xl-shrink-1 min-width-270-all border-left py-3">
+                    <div class="u-avatar mr-2">
+                        <i class="text-primary ec ec-payment font-size-46"></i>
                     </div>
-                    <!-- End Feature List -->
+                    <div class="media-body text-center">
+                        <span class="d-block font-weight-bold text-dark">Payment</span>
+                        <div class=" text-secondary">Secure System</div>
+                    </div>
+                </div>
+                <!-- End Feature List -->
 
-                    <!-- Feature List -->
-                    <div class="media col px-6 px-xl-4 px-wd-8 flex-shrink-0 flex-xl-shrink-1 min-width-270-all border-left py-3">
-                        <div class="u-avatar mr-2">
-                            <i class="text-primary ec ec-tag font-size-46"></i>
-                        </div>
-                        <div class="media-body text-center">
-                            <span class="d-block font-weight-bold text-dark">Only Best</span>
-                            <div class=" text-secondary">Brands</div>
-                        </div>
+                <!-- Feature List -->
+                <div class="media col px-6 px-xl-4 px-wd-8 flex-shrink-0 flex-xl-shrink-1 min-width-270-all border-left py-3">
+                    <div class="u-avatar mr-2">
+                        <i class="text-primary ec ec-tag font-size-46"></i>
                     </div>
-                    <!-- End Feature List -->
-                 </div>
+                    <div class="media-body text-center">
+                        <span class="d-block font-weight-bold text-dark">Only Best</span>
+                        <div class=" text-secondary">Brands</div>
+                    </div>
+                </div>
+                <!-- End Feature List -->
+            </div>
 
             <!-- Full banner -->
             <!-- End Full banner -->

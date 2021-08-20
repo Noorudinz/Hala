@@ -28,13 +28,18 @@ namespace HALA.DL.BL.Implementation
 
                 DataSet ds = HALASQL.eds(ContentSP.FetchHomeMainBanner , param);
                 GetContentResponse details = new GetContentResponse();
+                //StringBuilder content = new StringBuilder();
                 if (ds.Tables[0].Rows.Count > 0)
                 {
                     foreach (DataRow dr in ds.Tables[0].Rows)
                     {
+                        //content.Append(Convert.ToString(dr["ContentDetails"]));
+                        //content.Append("&nbsp;");
                         details.Content = Convert.ToString(dr["ContentDetails"]);
-                 
                     }
+
+                    //details.Content = content.ToString();
+
                     details.IsTransactionDone = true;
                 }
                 else
