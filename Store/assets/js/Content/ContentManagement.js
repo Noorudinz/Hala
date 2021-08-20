@@ -9,26 +9,14 @@ $(document).ready(function () {
         contentType: 'application/json; charset=utf-8',
         dataType: 'json',
         success: function (response) {
-           
+            alert(1);
             if (response != null && response.d != null) {
                 var parsed_data = JSON.parse(response.d);
+                alert(parsed_data);
                 $('#HomeBanner').html(parsed_data);
-                //alert(parsed_data);
-
-                //if (parsed_data.userName != null && parsed_data.userName.length != 0) {
-                //    $('#lstSignIn').hide();
-                //    $('#lstCustomerName').show();
-                //    $('#HomeMegaMenu').text(parsed_data.userName);
-                //}
-                //else {
-                //    $('#lstSignIn').show();
-                //    $('#lstCustomerName').hide();
-                //}
+                
             }
-            else {
-                $('#lstSignIn').show();
-                $('#lstCustomerName').hide();
-            }
+        
         },
         error: function () {
             alert('error');
