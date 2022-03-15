@@ -51,7 +51,7 @@ namespace HALA.API.Controllers
 
         [HttpGet]
         [Route(ContentURI.FetchHomeMainBanner)]
-        public RR.GetContentResponse GetCustomerByEmail(string type)
+        public RR.GetContentResponse GetHomeBanner(string type)
         {
             try
             {
