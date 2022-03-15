@@ -20,41 +20,57 @@ namespace HALA.DL.BL.Implementation
 
         public GetContentResponse FetchHomeMainBanner(string type)
         {
-            try
-            {
-                SqlParameter[] param = new SqlParameter[] {
+
+            GetContentResponse details = new GetContentResponse();
+
+            SqlParameter[] param = new SqlParameter[] {
                     new SqlParameter("@ContentType",type)
                 };
 
-                DataSet ds = HALASQL.eds(ContentSP.FetchHomeMainBanner , param);
-                GetContentResponse details = new GetContentResponse();
-                //StringBuilder content = new StringBuilder();
-                if (ds.Tables[0].Rows.Count > 0)
-                {
-                    foreach (DataRow dr in ds.Tables[0].Rows)
-                    {
-                        //content.Append(Convert.ToString(dr["ContentDetails"]));
-                        //content.Append("&nbsp;");
-                        details.Content = Convert.ToString(dr["ContentDetails"]);
-                    }
+            DataSet ds = HALASQL.eds(ContentSP.FetchHomeMainBanner, param);
 
-                    //details.Content = content.ToString();
+            //var addString = new GetContentResponse();
 
-                    details.IsTransactionDone = true;
-                }
-                else
-                    details.IsTransactionDone = false;
+            //addString = (from DataRow dr in ds.Tables[0].Rows
+            //             select new GetContentResponse()
+            //             {
+            //                 Content = Convert.ToString(dr["ContentDetails"]),
+            //             }).ToString();
 
-                return details;
-            }
-            catch (Exception ex)
-            {
-                return new GetContentResponse
-                {
-                    IsTransactionDone = false,
-                    TransactionErrorMessage = ex.Message
-                };
-            }
+            details.Content = ds.Tables[0].Rows[0]["ContentDetails"].ToString();
+
+            return details;
+
+            //try
+            //{
+            //    SqlParameter[] param = new SqlParameter[] {
+            //        new SqlParameter("@ContentType",type)
+            //    };
+
+            //    DataSet ds = HALASQL.eds(ContentSP.FetchHomeMainBanner, param);                
+
+            //    var addString = new List<GetContentResponse>();
+
+            //    addString = (from DataRow dr in ds.Tables[0].Rows
+            //                 select new GetContentResponse()
+            //                 {
+            //                     Content = Convert.ToString(dr["ContentDetails"]),
+            //                 }).ToList();
+
+            //    details.Content = addString.ToString();
+
+            //    return details;
+            //}
+            //catch (Exception ex)
+            //{
+            //    return new GetContentResponse
+            //    {
+            //        IsTransactionDone = false,
+            //        TransactionErrorMessage = ex.Message
+            //    };
+            //}
+
+            //return details;
         }
     }
 }
