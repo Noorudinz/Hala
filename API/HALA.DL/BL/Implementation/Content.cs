@@ -29,48 +29,34 @@ namespace HALA.DL.BL.Implementation
 
             DataSet ds = HALASQL.eds(ContentSP.FetchHomeMainBanner, param);
 
-            //var addString = new GetContentResponse();
-
-            //addString = (from DataRow dr in ds.Tables[0].Rows
-            //             select new GetContentResponse()
-            //             {
-            //                 Content = Convert.ToString(dr["ContentDetails"]),
-            //             }).ToString();
-
             details.Content = ds.Tables[0].Rows[0]["ContentDetails"].ToString();
 
             return details;
 
-            //try
-            //{
-            //    SqlParameter[] param = new SqlParameter[] {
-            //        new SqlParameter("@ContentType",type)
-            //    };
+        }
 
-            //    DataSet ds = HALASQL.eds(ContentSP.FetchHomeMainBanner, param);                
+        public OnSalesProducts FetchOnSalesProduct(string type)
+        {
+            var onSaleProducts = new OnSalesProducts();
 
-            //    var addString = new List<GetContentResponse>();
+            SqlParameter[] param = new SqlParameter[] {
+                    new SqlParameter("@ContentType",type)
+                };
 
-            //    addString = (from DataRow dr in ds.Tables[0].Rows
-            //                 select new GetContentResponse()
-            //                 {
-            //                     Content = Convert.ToString(dr["ContentDetails"]),
-            //                 }).ToList();
+            DataSet ds = HALASQL.eds(ContentSP.FetchHomeMainBanner, param);
 
-            //    details.Content = addString.ToString();
+            List<OnSalesProducts> lstSalesProducts = ds.Tables[0].AsEnumerable()
+                                  .Select(x => new OnSalesProducts()
+                                  {
+                                      Product_Id = x.Field<int>("Product_Id"),
+                                      Category_Name = x.Field<string>("CategoryName"),
+                                      Product_Name = x.Field<string>("Product_Name"),
+                                      Product_Image = x.Field<string>("MainImage"),
+                                      Product_Price = x.Field<decimal>("Price")
+                                  }).ToList();
 
-            //    return details;
-            //}
-            //catch (Exception ex)
-            //{
-            //    return new GetContentResponse
-            //    {
-            //        IsTransactionDone = false,
-            //        TransactionErrorMessage = ex.Message
-            //    };
-            //}
+            return null;
 
-            //return details;
         }
     }
 }

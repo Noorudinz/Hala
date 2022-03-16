@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/General.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Store._Home" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
+    
     <main id="content" role="main">
         <!-- Slider Section -->
         <div class="mb-5">
@@ -23,90 +23,10 @@
         <!-- End Slider Section -->
         <div class="container">
             <!-- Banner -->
-            <div class="mb-5">
-                <div class="row">
-                    <div class="col-md-6 mb-4 mb-xl-0 col-xl-3">
-                        <a href="../shop/shop.html" class="d-black text-gray-90">
-                            <div class="min-height-132 py-1 d-flex bg-gray-1 align-items-center">
-                                <div class="col-6 col-xl-5 col-wd-6 pr-0">
-                                    <img class="img-fluid" src="../../assets/img/190X150/img1.png" alt="Image Description">
-                                </div>
-                                <div class="col-6 col-xl-7 col-wd-6">
-                                    <div class="mb-2 pb-1 font-size-18 font-weight-light text-ls-n1 text-lh-23">
-                                        CATCH BIG <strong>DEALS</strong> ON THE ELECTRONICS
-                                    </div>
-                                    <div class="link text-gray-90 font-weight-bold font-size-15" href="#">
-                                        Shop now
-                                        <span class="link__icon ml-1">
-                                            <span class="link__icon-inner"><i class="ec ec-arrow-right-categproes"></i></span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 mb-4 mb-xl-0 col-xl-3">
-                        <a href="../shop/shop.html" class="d-black text-gray-90">
-                            <div class="min-height-132 py-1 d-flex bg-gray-1 align-items-center">
-                                <div class="col-6 col-xl-5 col-wd-6 pr-0">
-                                    <img class="img-fluid" src="../../assets/img/190X150/img2.jpg" alt="Image Description">
-                                </div>
-                                <div class="col-6 col-xl-7 col-wd-6">
-                                    <div class="mb-2 pb-1 font-size-18 font-weight-light text-ls-n1 text-lh-23">
-                                        CATCH BIG <strong>DEALS</strong> ON THE WATCHES
-                                    </div>
-                                    <div class="link text-gray-90 font-weight-bold font-size-15" href="#">
-                                        Shop now
-                                        <span class="link__icon ml-1">
-                                            <span class="link__icon-inner"><i class="ec ec-arrow-right-categproes"></i></span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 mb-4 mb-xl-0 col-xl-3">
-                        <a href="../shop/shop.html" class="d-black text-gray-90">
-                            <div class="min-height-132 py-1 d-flex bg-gray-1 align-items-center">
-                                <div class="col-6 col-xl-5 col-wd-6 pr-0">
-                                    <img class="img-fluid" src="../../assets/img/190X150/img3.jpg" alt="Image Description">
-                                </div>
-                                <div class="col-6 col-xl-7 col-wd-6">
-                                    <div class="mb-2 pb-1 font-size-18 font-weight-light text-ls-n1 text-lh-23">
-                                        CATCH BIG <strong>DEALS</strong> ON THE COSMETICS
-                                    </div>
-                                    <div class="link text-gray-90 font-weight-bold font-size-15" href="#">
-                                        Shop now
-                                        <span class="link__icon ml-1">
-                                            <span class="link__icon-inner"><i class="ec ec-arrow-right-categproes"></i></span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 mb-4 mb-xl-0 col-xl-3">
-                        <a href="../shop/shop.html" class="d-black text-gray-90">
-                            <div class="min-height-132 py-1 d-flex bg-gray-1 align-items-center">
-                                <div class="col-6 col-xl-5 col-wd-6 pr-0">
-                                    <img class="img-fluid" src="../../assets/img/190X150/img4.png" alt="Image Description">
-                                </div>
-                                <div class="col-6 col-xl-7 col-wd-6">
-                                    <div class="mb-2 pb-1 font-size-18 font-weight-light text-ls-n1 text-lh-23">
-                                        CATCH BIG <strong>DEALS</strong> ON THE FASHIONS
-                                    </div>
-                                    <div class="link text-gray-90 font-weight-bold font-size-15" href="#">
-                                        Shop now
-                                        <span class="link__icon ml-1">
-                                            <span class="link__icon-inner"><i class="ec ec-arrow-right-categproes"></i></span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+
+            <div id="bottomBanner">
             </div>
+            
             <!-- End Banner -->
         </div>
 
@@ -426,5 +346,5 @@
         <!-- Brand Carousel -->
         <!-- End Brand Carousel -->
     </main>
-
+      
 </asp:Content>
