@@ -10,6 +10,6 @@ namespace HALA.DTO.Constants
     public class ContentURI
     {
         public const string FetchHomeMainBanner = "api/content/FetchHomeMainBanner/{type}";
-        //public const string GetCustomerByEmail = "api/customer/GetCustomerByEmail/{emailId}";
+        public const string FetchOnSales = "api/content/FetchOnSales/{type}";
     }
 }

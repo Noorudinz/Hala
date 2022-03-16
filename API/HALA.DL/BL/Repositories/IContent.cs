@@ -10,5 +10,7 @@ namespace HALA.DL.BL.Repositories
    public interface IContent
    {
         GetContentResponse FetchHomeMainBanner(string type);
+
+        OnSalesProducts FetchOnSalesProduct(string type);
    }
 }

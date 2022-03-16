@@ -247,7 +247,7 @@ namespace Store
 
                 var url = HALA.DTO.Constants
                       .ContentURI.FetchHomeMainBanner
-                      .Replace("{type}", "HOME_MAIN_BANNER");
+                      .Replace("{type}", "HOME_MAIN_BANNER_ALL");
 
                 var results = service.GetData<HALA.DTO.RequestResponseWrappers.ApiResponse
                           <HALA.DTO.RequestResponseWrappers.GetContentResponse>>(url);

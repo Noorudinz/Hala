@@ -67,5 +67,27 @@ namespace HALA.API.Controllers
                 };
             }
         }
+
+        [HttpGet]
+        [Route(ContentURI.FetchOnSales)]
+        public RR.OnSalesProducts GetOnSales(string type)
+        {
+            //try
+            //{
+            //    BLO.OnSalesProducts result = _contentRepository.FetchOnSalesProduct(type);
+
+            //    return _mapper.Map<BLO.OnSalesProducts, RR.OnSalesProducts>(result);
+            //}
+            //catch (Exception ex)
+            //{
+            //    return new RR.GetContentResponse
+            //    {
+            //        IsTransactionDone = false,
+            //        TransactionErrorMessage = ex.Message
+            //    };
+            //}
+
+            return null;
+        }
     }
 }
