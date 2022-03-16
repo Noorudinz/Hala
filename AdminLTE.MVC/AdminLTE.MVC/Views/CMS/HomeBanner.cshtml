@@ -83,7 +83,7 @@
         </div>*@
 
     <div class="modal fade" id="myModal2">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
                     <h3 class="modal-title">Edit Content</h3>
@@ -168,9 +168,9 @@
                     "targets": [4],
                     render: function (status, type, row, meta) {
                        if (status == true) {
-                           status = '<td><span class="approved status">Active</span></td>'
+                           status = '<td><span style="color: green;">Active</span></td>'
                         } else if (status == false) {
-                           status = '<td><span class="rejected status">Closed</span></td>'
+                           status = '<td><span style="color: red;">Closed</span></td>'
                         }
                         return status;
                     },

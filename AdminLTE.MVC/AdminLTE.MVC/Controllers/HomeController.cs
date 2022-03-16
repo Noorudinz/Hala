@@ -8,17 +8,22 @@ using Microsoft.Extensions.Logging;
 using AdminLTE.MVC.Models;
 using Microsoft.AspNetCore.Authorization;
 using AdminLTE.MVC.Data;
+using Microsoft.Extensions.Caching.Memory;
+
 
 namespace AdminLTE.MVC.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private ApplicationDbContext _context;   
-        public HomeController(ILogger<HomeController> logger, ApplicationDbContext context)
+        private ApplicationDbContext _context;
+        private IMemoryCache _memoryCache;
+        public HomeController(ILogger<HomeController> logger, ApplicationDbContext context, IMemoryCache memoryCache)
         {
             _logger = logger;
             _context = context;
+            _memoryCache = memoryCache;
+
         }
 
         [AllowAnonymous]
@@ -26,6 +31,7 @@ namespace AdminLTE.MVC.Controllers
         {
             ViewBag.TotalUserRegister = _context.CustomerMaster.Count();
             return View();
+            
         }
       
         public IActionResult Privacy()
@@ -44,6 +50,7 @@ namespace AdminLTE.MVC.Controllers
             return View();
         }
 
+        //[OutputCache(Duration = 120)]
         public IActionResult LoadData()
         {
             try
