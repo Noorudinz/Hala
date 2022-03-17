@@ -70,24 +70,22 @@ namespace HALA.API.Controllers
 
         [HttpGet]
         [Route(ContentURI.FetchOnSales)]
-        public RR.OnSalesProducts GetOnSales(string type)
+        public RR.ListOfOnSalesProducts GetOnSales(string type)
         {
-            //try
-            //{
-            //    BLO.OnSalesProducts result = _contentRepository.FetchOnSalesProduct(type);
+            try
+            {
+                BLO.ListOfOnSalesProducts result = _contentRepository.FetchOnSalesProduct(type);
 
-            //    return _mapper.Map<BLO.OnSalesProducts, RR.OnSalesProducts>(result);
-            //}
-            //catch (Exception ex)
-            //{
-            //    return new RR.GetContentResponse
-            //    {
-            //        IsTransactionDone = false,
-            //        TransactionErrorMessage = ex.Message
-            //    };
-            //}
-
-            return null;
+                return _mapper.Map<BLO.ListOfOnSalesProducts, RR.ListOfOnSalesProducts>(result);
+            }
+            catch (Exception ex)
+            {
+                return new RR.ListOfOnSalesProducts
+                {
+                    IsTransactionDone = false,
+                    TransactionErrorMessage = ex.Message
+                };
+            }
         }
     }
 }

@@ -23,8 +23,12 @@ namespace HALA.DL.BO
         public string Category_Name { get; set; }
         public string Product_Image { get; set; }
         public decimal Product_Price { get; set; }
+    }
+
+    public class ListOfOnSalesProducts : TransactionWrapper
+    {
         public List<OnSalesProducts> OnSales_ProductList { get; set; }
-        public OnSalesProducts()
+        public ListOfOnSalesProducts()
         {
             OnSales_ProductList = new List<OnSalesProducts>();
         }
