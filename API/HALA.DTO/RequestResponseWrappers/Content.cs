@@ -33,10 +33,14 @@ namespace HALA.DTO.RequestResponseWrappers
         public string Product_Image { get; set; }
         [JsonProperty(PropertyName = "product_Price")]
         public decimal Product_Price { get; set; }
+    
+    }
 
+    public class ListOfOnSalesProducts : Transaction
+    {
         [JsonProperty(PropertyName = "on_Sale_ProductList")]
         public List<OnSalesProducts> OnSales_ProductList { get; set; }
-        public OnSalesProducts()
+        public ListOfOnSalesProducts()
         {
             OnSales_ProductList = new List<OnSalesProducts>();
         }

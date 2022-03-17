@@ -11,6 +11,6 @@ namespace HALA.DL.BL.Repositories
    {
         GetContentResponse FetchHomeMainBanner(string type);
 
-        OnSalesProducts FetchOnSalesProduct(string type);
+        ListOfOnSalesProducts FetchOnSalesProduct(string type);
    }
 }

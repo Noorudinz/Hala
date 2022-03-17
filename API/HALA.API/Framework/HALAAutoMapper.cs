@@ -192,6 +192,8 @@ namespace HALA.API.Framework
                           RR.GetContentResponse>().ReverseMap();
                 cfg.CreateMap<BLO.OnSalesProducts,
                              RR.OnSalesProducts>().ReverseMap();
+                cfg.CreateMap<BLO.ListOfOnSalesProducts,
+                             RR.ListOfOnSalesProducts>().ReverseMap();
             });
             return (_mapper = _mapperConfig.CreateMapper());
         }

@@ -35,9 +35,9 @@ namespace HALA.DL.BL.Implementation
 
         }
 
-        public OnSalesProducts FetchOnSalesProduct(string type)
+        public ListOfOnSalesProducts FetchOnSalesProduct(string type)
         {
-            var onSaleProducts = new OnSalesProducts();
+            var onSaleProducts = new ListOfOnSalesProducts();
 
             SqlParameter[] param = new SqlParameter[] {
                     new SqlParameter("@ContentType",type)
@@ -45,7 +45,7 @@ namespace HALA.DL.BL.Implementation
 
             DataSet ds = HALASQL.eds(ContentSP.FetchHomeMainBanner, param);
 
-            List<OnSalesProducts> lstSalesProducts = ds.Tables[0].AsEnumerable()
+            var lstSalesProducts = ds.Tables[0].AsEnumerable()
                                   .Select(x => new OnSalesProducts()
                                   {
                                       Product_Id = x.Field<int>("Product_Id"),
@@ -55,7 +55,9 @@ namespace HALA.DL.BL.Implementation
                                       Product_Price = x.Field<decimal>("Price")
                                   }).ToList();
 
-            return null;
+           onSaleProducts.OnSales_ProductList = lstSalesProducts;
+
+            return onSaleProducts;
 
         }
     }
