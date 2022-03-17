@@ -14,6 +14,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
+using AdminLTE.MVC.Repository;
+using AdminLTE.MVC.Implementation;
 
 namespace AdminLTE.MVC
 {
@@ -34,18 +36,24 @@ namespace AdminLTE.MVC
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
+
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
             services.AddControllersWithViews();
             services.AddRazorPages();
-services.AddMvc(o =>
-{
-    //Add Authentication to all Controllers by default.
-    var policy = new AuthorizationPolicyBuilder()
-        .RequireAuthenticatedUser()
-        .Build();
-    o.Filters.Add(new AuthorizeFilter(policy));
-});
+            services.AddMvc(o =>
+            {
+                //Add Authentication to all Controllers by default.
+                var policy = new AuthorizationPolicyBuilder()
+                    .RequireAuthenticatedUser()
+                    .Build();
+                o.Filters.Add(new AuthorizeFilter(policy));
+
+
+            });
+
+            services.AddSingleton<IBrand, BrandRepository>();
 
         }
 
