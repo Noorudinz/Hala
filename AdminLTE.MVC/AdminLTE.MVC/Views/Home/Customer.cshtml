@@ -103,17 +103,7 @@
 <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
 <script src="~/plugins/jquery-ui/jquery-ui.js"></script>
 <script type="text/javascript">
-    //$(function () {
-    //    $('#example1').DataTable()
-    //    $('#example2').DataTable({
-    //        'paging': true,
-    //        'lengthChange': false,
-    //        'searching': false,
-    //        'ordering': true,
-    //        'info': true,
-    //        'autoWidth': false
-    //    })
-    //})
+ 
 
     $(document).ready(function () {
          $("#dtCustomerMaster").DataTable({
@@ -135,9 +125,9 @@
                     "targets": [5],
                     render: function (status, type, row, meta) {
                        if (status == true) {
-                           status = '<td><span class="approved status">Active</span></td>'
+                           status = '<td><span style="color: green;">Active</span></td>'
                         } else if (status == false) {
-                           status = '<td><span class="rejected status">Closed</span></td>'
+                           status = '<td><span style="color: red;">Closed</span></td>'
                         }
                         return status;
                     },
