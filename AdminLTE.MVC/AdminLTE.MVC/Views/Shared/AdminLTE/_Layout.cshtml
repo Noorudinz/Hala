@@ -7,6 +7,11 @@
 
     <title>AdminLTE 3 | Starter</title>
     <partial name="AdminLTE/_Styles" />
+    @* Syncfusion Essential JS 2 Styles *@
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
+
+    @* Syncfusion Essential JS 2 Scripts *@
+    <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
 </head>
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
@@ -31,6 +36,8 @@
             <div class="content">
                 <div class="container-fluid">
                     @RenderBody()
+                    @RenderSection("Scripts", required: false)
+                    <ejs-scripts></ejs-scripts>
                 </div>
             </div>
         </div>

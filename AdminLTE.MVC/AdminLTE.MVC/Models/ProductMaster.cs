@@ -32,4 +32,13 @@ namespace AdminLTE.MVC.Models
     {
         public List<ProductMaster> listProductMaster { get; set; }
     }
+
+    public class ProductList
+    {
+        public int Product_Id { get; set; }
+        public string BrandName { get; set; }
+        public string CategoryName { get; set; }
+        public string SubCategoryName { get; set; }
+        public string Product_Name { get; set; }
+    }
 }

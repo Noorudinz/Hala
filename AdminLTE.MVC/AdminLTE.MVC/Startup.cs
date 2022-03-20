@@ -14,6 +14,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
+using AdminLTE.MVC.Repository;
+using AdminLTE.MVC.Implementation;
 
 namespace AdminLTE.MVC
 {
@@ -30,22 +32,29 @@ namespace AdminLTE.MVC
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMemoryCache();
-            services.AddOutputCaching();
+            //services.AddOutputCaching();
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
+
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
             services.AddControllersWithViews();
             services.AddRazorPages();
-services.AddMvc(o =>
-{
-    //Add Authentication to all Controllers by default.
-    var policy = new AuthorizationPolicyBuilder()
-        .RequireAuthenticatedUser()
-        .Build();
-    o.Filters.Add(new AuthorizeFilter(policy));
-});
+            services.AddMvc(o =>
+            {
+                //Add Authentication to all Controllers by default.
+                var policy = new AuthorizationPolicyBuilder()
+                    .RequireAuthenticatedUser()
+                    .Build();
+                o.Filters.Add(new AuthorizeFilter(policy));
+
+
+            });
+
+            services.AddScoped<IBrand, BrandRepository>();
+            services.AddScoped<IProduct, ProductRepository>();
 
         }
 
@@ -63,7 +72,7 @@ services.AddMvc(o =>
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-            app.UseOutputCaching();
+           // app.UseOutputCaching();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
