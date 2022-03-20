@@ -1,4 +1,5 @@
 ﻿using AdminLTE.MVC.Data;
+using AdminLTE.MVC.Models;
 using AdminLTE.MVC.Repository;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -19,9 +20,11 @@ namespace AdminLTE.MVC.Controllers
 
         public IActionResult Index()
         {
-            var productData = _brandRepo.GetAllBrands();
-
+            var Order = OrdersDetails.GetAllRecords();
+            ViewBag.DataSource = Order;
             return View();
         }
+
+
     }
 }

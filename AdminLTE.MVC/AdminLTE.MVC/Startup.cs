@@ -32,7 +32,7 @@ namespace AdminLTE.MVC
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMemoryCache();
-            services.AddOutputCaching();
+            //services.AddOutputCaching();
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
@@ -53,7 +53,8 @@ namespace AdminLTE.MVC
 
             });
 
-            services.AddSingleton<IBrand, BrandRepository>();
+            services.AddScoped<IBrand, BrandRepository>();
+            
 
         }
 
@@ -71,7 +72,7 @@ namespace AdminLTE.MVC
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-            app.UseOutputCaching();
+           // app.UseOutputCaching();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
