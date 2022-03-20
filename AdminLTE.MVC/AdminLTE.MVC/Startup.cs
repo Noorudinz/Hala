@@ -54,7 +54,7 @@ namespace AdminLTE.MVC
             });
 
             services.AddScoped<IBrand, BrandRepository>();
-            
+            services.AddScoped<IProduct, ProductRepository>();
 
         }
 

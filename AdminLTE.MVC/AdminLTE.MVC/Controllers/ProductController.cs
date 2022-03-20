@@ -11,17 +11,19 @@ namespace AdminLTE.MVC.Controllers
 {
     public class ProductController : Controller
     {
-        private readonly IBrand _brandRepo;
-        public ProductController(IBrand context)
+        private readonly IProduct _productRepo;
+        public ProductController(IProduct context)
         {
-            _brandRepo = context;
+            _productRepo = context;
         }
             
 
         public IActionResult Index()
         {
-            var Order = OrdersDetails.GetAllRecords();
-            ViewBag.DataSource = Order;
+            var products = _productRepo.GetAllProductList();
+            ViewBag.DataSource = products;
+            //var Order = OrdersDetails.GetAllRecords();           
+            //ViewBag.DataSource = Order;
             return View();
         }
 

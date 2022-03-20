@@ -4,7 +4,7 @@
     Layout = "~/Views/Shared/AdminLTE/_Layout.cshtml";
 }
 
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource">
-
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="272" toolbar="@(new List<string>() { "Search" ,"Add", "Edit", "Delete","Update","Cancel"})">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Dialog"></e-grid-editSettings>
 </ejs-grid>
 
