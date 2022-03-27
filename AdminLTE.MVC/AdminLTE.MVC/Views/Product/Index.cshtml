@@ -4,7 +4,44 @@
     Layout = "~/Views/Shared/AdminLTE/_Layout.cshtml";
 }
 
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="272" toolbar="@(new List<string>() { "Search" ,"Add", "Edit", "Delete","Update","Cancel"})">
-    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Dialog"></e-grid-editSettings>
+
+
+@{
+    List<object> commands = new List<object>();
+    commands.Add(new { type = "edit", buttonOption = new { iconCss = "e-icons e-edit", cssClass = "e-flat" } });
+    commands.Add(new { type = "delete", buttonOption = new { iconCss = "e-icons e-delete", cssClass = "e-flat" } });
+}
+
+<button onclick="btnClick(event)">Add Product</button>
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="273" commandClick="commandClick">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Batch"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" visible="false"></e-grid-column>
+        <e-grid-column field="Role" headerText="Role" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" editType="numericedit" width="120"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+        <e-grid-column headerText="Manage Records" width="150" commands="commands"></e-grid-column>
+    </e-grid-columns>
 </ejs-grid>
 
+<script>
+    function commandClick(args) {
+        console.log(args.commandColumn.type);
+        alert(JSON.stringify(args.rowData));  // display row data
+        if (args.commandColumn.type === 'edit') {
+            alert('edit');
+        }
+
+        if (args.commandColumn.type === 'delete') {
+            alert('delete');
+        }
+    }
+
+    var isAddable = true;
+
+    function btnClick(args) {
+        alert('Add');
+    }
+
+
+</script>
