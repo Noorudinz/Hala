@@ -16,18 +16,19 @@
 <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="273" commandClick="commandClick">
     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Batch"></e-grid-editSettings>
     <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" visible="false"></e-grid-column>
-        <e-grid-column field="Role" headerText="Role" width="120"></e-grid-column>
-        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" editType="numericedit" width="120"></e-grid-column>
-        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+        <e-grid-column field="Product_Id" isPrimaryKey="true" visible="false"></e-grid-column>
+        <e-grid-column field="BrandName" headerText="Brand Name" width="120"></e-grid-column>
+        <e-grid-column field="CategoryName" headerText="Category Name" width="120"></e-grid-column>
+        <e-grid-column field="SubCategoryName" headerText="SubCategory Name" width="150"></e-grid-column>
+        <e-grid-column field="Product_Name" headerText="Product Name" width="150"></e-grid-column>
         <e-grid-column headerText="Manage Records" width="150" commands="commands"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
 
 <script>
     function commandClick(args) {
-        console.log(args.commandColumn.type);
-        alert(JSON.stringify(args.rowData));  // display row data
+        //console.log(args.commandColumn.type);
+        //alert(JSON.stringify(args.rowData));  // display row data
         if (args.commandColumn.type === 'edit') {
             alert('edit');
         }
@@ -40,7 +41,7 @@
     var isAddable = true;
 
     function btnClick(args) {
-        alert('Add');
+        window.location.href = "/Product/AddPrimary";
     }
 
 

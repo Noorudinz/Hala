@@ -16,14 +16,19 @@ namespace AdminLTE.MVC.Controllers
         {
             _productRepo = context;
         }
-            
 
         public IActionResult Index()
         {
             var products = _productRepo.GetAllProductList();
             ViewBag.DataSource = products;
-            //var Order = OrdersDetails.GetAllRecords();           
+            return View();
+            //var Order = OrdersDetails.GetAllRecords();
             //ViewBag.DataSource = Order;
+            //return View();
+        }
+
+        public IActionResult AddPrimary()
+        {
             return View();
         }
 
