@@ -16,6 +16,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using AdminLTE.MVC.Repository;
 using AdminLTE.MVC.Implementation;
+using Newtonsoft.Json.Serialization;
 
 namespace AdminLTE.MVC
 {
@@ -49,12 +50,14 @@ namespace AdminLTE.MVC
                     .RequireAuthenticatedUser()
                     .Build();
                 o.Filters.Add(new AuthorizeFilter(policy));
-
-
             });
+
 
             services.AddScoped<IBrand, BrandRepository>();
             services.AddScoped<IProduct, ProductRepository>();
+            services.AddScoped<ICategory, CategoryRepository>();
+            services.AddScoped<ISubCategory, SubCategoryRepository>();
+            services.AddScoped<IColor, ColorRepository>();
 
         }
 
