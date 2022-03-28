@@ -32,6 +32,11 @@ namespace AdminLTE.MVC.Implementation
             throw new NotImplementedException();
         }
 
+        public List<SubCategory> GetAllSubCategorysByCategoryId(int selectedId)
+        {
+            return _context.SubCategory.Where(w => w.CategoryId == selectedId).ToList();
+        }
+
         public SubCategory GetSubCategoryById(int subCategoryId)
         {
             throw new NotImplementedException();

@@ -1,7 +1,237 @@
-﻿@model AdminLTE.MVC.Models.ProductMaster
-
+﻿
 @{
     Layout = "~/Views/Shared/AdminLTE/_Layout.cshtml";
 }
 
-<h1>Add Primary</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+            <h2>Add Product</h2>
+        </div>
+        <div class="col-9">
+            <span style="color: red;" id="errorMsg"></span>
+        </div>
+    </div>
+
+    <div class="container">
+        <form class="form-horizontal">
+            <div class="card-body">
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Category</label>
+                    <div class="col-sm-10">
+                        <select id="category" class="custom-select">
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Sub Category</label>
+                    <div class="col-sm-10">
+                        <select id="subCategory" class="custom-select" disabled>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Color</label>
+                    <div class="col-sm-10">
+                        <select id="colors" multiple="" class="form-control">
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">SKU</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="skuProduct">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Product Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="productName">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Short Description</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="shortDescription">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-footer">
+                <button type="button" id="savebtn" class="btn btn-info">Save</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('#errorMsg').text('');
+
+        //Get Category
+        $.ajax({
+            type: "GET",
+            url: "@Url.Action("GetAllCategorys", "Category")",
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            success: function (response) {
+                if(response != null) {
+                    var s = '<option value="-1">Please Select a Category</option>';
+                    for (var i = 0; i < response.length; i++) {
+                        s += '<option value="' + response[i].categoryId + '">' + response[i].category_Name + '</option>';
+                    }
+                    $("#category").html(s);
+                }
+            },
+            error: function (e) {
+                console.log(e);
+            }
+        });
+
+        //Get Color
+        $.ajax({
+            type: "GET",
+            url: "@Url.Action("GetAllColors", "Color")",
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            success: function (response) {
+                if (response != null) {
+                    var s = '';
+                    for (var i = 0; i < response.length; i++) {
+                        s += '<option value="' + response[i].colorId + '">' + response[i].color_Name + '</option>';
+                    }
+                    $("#colors").html(s);
+                }
+            },
+            error: function (e) {
+                console.log(e);
+            }
+        });
+    });
+
+    //Get SubCategory On Select Category
+    $('#category').on('change', function () {
+        //alert(this.value);
+        $.ajax({
+            type: "GET",
+            url: "@Url.Action("GetSubCategoryByCategoryId", "SubCategory")",
+            contentType: 'application/json; charset=utf-8',
+            data: { 'selectedId': this.value },
+            dataType: 'json',
+            success: function (response) {
+                if (response != null) {
+                    $('#subCategory').prop("disabled", false);
+                    var s = '<option value="-1">Please Select a SubCategory</option>';
+                    for (var i = 0; i < response.length; i++) {
+                        s += '<option value="' + response[i].subCategoryId + '">' + response[i].subCategory_Name + '</option>';
+                    }
+                    $("#subCategory").html(s);
+                }
+            },
+            error: function (e) {
+                console.log(e);
+            }
+        });
+    });
+
+    $('#savebtn').click(function () {
+            try
+            {
+                if (validateCategory() && validateSubCategory() && validateColor() && validateRequiredFields()) {
+                    addProduct();
+                }
+            } catch (e) {
+                console.log(e);
+            }
+
+        });
+
+    function validateCategory() {
+        var category = ($('#category').val());
+        if (category != null && category != -1) {
+            return true;
+        } else {
+            $('#errorMsg').text('* Select proper category');
+        }
+    }
+
+    function validateSubCategory() {
+        var subCategory = ($('#subCategory').val());
+        if (subCategory != null && subCategory != -1) {
+            return true;
+        } else {
+            $('#errorMsg').text('* Select proper sub category');
+        }
+    }
+
+    function validateColor() {
+        var colors = ($('#colors').val());
+        if (colors != null && colors != -1 && colors != '') {
+            return true;
+        } else {
+            $('#errorMsg').text('* Select atleast one color');
+        }
+    }
+
+    function validateRequiredFields() {
+        var skuProduct = $('#skuProduct').val();
+        var productName = $('#productName').val();
+        var shortDescription = $('#shortDescription').val();
+        if (skuProduct == '') {
+            $('#errorMsg').text('* SKU required');
+            return false;
+        }
+        if (productName == '') {
+            $('#errorMsg').text('* Product Name required');
+            return false;
+        }
+        if (shortDescription == '') {
+            $('#errorMsg').text('* Short Description required');
+            return false;
+        }
+
+        return true;
+
+        }
+
+    function addProduct() {
+
+        var product = {
+                'ProductId': 0,
+                'CategoryId': ($('#category').val()),
+                'SubCategoryId': ($('#subCategory').val()),
+                'ColorId': $('#colors').val(),
+                'SKU': $('#skuProduct').val(),
+                'ProductName': $('#productName').val(),
+                'ShortDesc': $('#shortDescription').val()
+            }
+
+        console.log(JSON.stringify({ product: product}));
+
+        //Get Add Product
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("AddProduct", "Product")",
+            contentType: 'application/json; charset=utf-8',
+            data: JSON.stringify(product),
+            dataType: 'json',
+            success: function (response) {
+                if (response != null) {
+                    //var s = '<option value="-1">Please Select a Category</option>';
+                    //for (var i = 0; i < response.length; i++) {
+                    //    s += '<option value="' + response[i].categoryId + '">' + response[i].category_Name + '</option>';
+                    //}
+                    //$("#category").html(s);
+                }
+            },
+            error: function (e) {
+                console.log(e);
+            }
+        });
+
+        }
+
+
+
+    </script>

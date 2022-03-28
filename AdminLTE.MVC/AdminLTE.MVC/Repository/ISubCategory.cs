@@ -13,5 +13,6 @@ namespace AdminLTE.MVC.Repository
         SubCategory AddSubCategory(SubCategory subCategory);
         SubCategory UpdateSubCategory(SubCategory subCategory);
         void DeleteSubCategory(int subCategoryId);
+        List<SubCategory> GetAllSubCategorysByCategoryId(int selectedId);
     }
 }
