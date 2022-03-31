@@ -1,0 +1,144 @@
+﻿<div class="row sectionBlockLayout" style="display: flex; flex-wrap: wrap; padding: 8px; margin: 0px; text-align: left; min-height: 100px;">
+    <div class="container" style="display: flex; flex-wrap: wrap;">
+
+        <!-- Sidebar -->
+        <div id="wrapper">
+            <div id="sidebar-wrapper">
+                <nav class="sidebar sidebar-menu-collapsed">
+                    <ul class="level1">
+                        <li class="active"><a href="#" title="Dashboard" class="expandable"><span class="glyphicon glyphicon-home collapsed-element">&nbsp;</span><span class="expanded-element">Dashboard</span></a></li>
+                        <li><a href="#" title="APIs" class="expandable"><span class="glyphicon glyphicon-cog collapsed-element">&nbsp;</span><span class="expanded-element">Employee Tracker</span></a></li>
+                        <li><a href="#" title="APIs" class="expandable"><span class="glyphicon glyphicon-wrench collapsed-element">&nbsp;</span><span class="expanded-element">Leave management</span></a></li>
+                        <li><a href="#" title="Settings" class="expandable"><span class="glyphicon glyphicon-cog collapsed-element">&nbsp;</span><span class="expanded-element">Assets management</span></a></li>
+                        <li><a href="#" title="Account" class="expandable"><span class="glyphicon glyphicon-user collapsed-element">&nbsp;</span><span class="expanded-element">Our squad's</span></a></li>
+                    </ul><br><br><a href="#" id="justify-icon" class="sidebar-nav-icon"><span class="glyphicon glyphicon-align-justify"></span></a>
+
+                    <!--<a href='#' id='logout-icon' title='Logout'>
+                        <span class='glyphicon glyphicon-off'></span>
+                    </a>-->
+                </nav>
+            </div>
+        </div>
+        <!-- Page content -->
+        <div>
+
+            <!-- Keep all page content within the page-content inset div! -->
+            <div class="page-content inset">
+                <div class="row">
+                    <div class="col-md-12" style="padding-left: 150px;">
+                        <div class="p-2">
+                            <div>
+                                <div id="memberDetail" class="text-center mt-4 mb-4 secondary-text">
+                                </div>
+                                <div class="row">
+                                    <div class="row tiles">
+                                        <div class="col-sm-4 col-xs-12 col-md-4 text-center">
+                                            <div class="tile-header">
+
+                                                <!--<i class="fa fa-columns" aria-hidden="true"></i>-->
+                                                Available Leave
+                                            </div>
+                                            <div id="availableCLEL" class="tile-css">
+
+                                                <!--<div>38<span class="leave-analytics"><small> day(s)</small></span></div>-->
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 col-xs-12 col-md-4 text-center">
+                                            <div class="tile-header">
+
+                                                <!--<i class="fa fa-clock-o" aria-hidden="true"></i>-->
+                                                Awaiting for Approval
+                                            </div>
+                                            <div id="pendingLeaveApplication" class="tile-css text-danger">
+
+                                                <!--<div>0<span class="leave-analytics"><small> leave(s)</small></span></div>-->
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 col-xs-12 col-md-4 text-center">
+                                            <div class="tile-header">
+
+                                                <!--<i class="fa fa-users" aria-hidden="true"></i>-->
+                                                Reportees Leave Request
+                                            </div>
+                                            <div id="reportiesPendingLeave" class="tile-css text-warning">
+
+                                                <!--<div>153<span class="leave-analytics"><small> leave(s)</small></span></div>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 columnBlockLayout" style="display: flex; flex-direction: column;"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function() {
+      $("#overlay").fadeIn();
+      var encdata = localStorage.getItem('ems_users');
+      if (encdata != null && encdata != '') {
+        var decdata = Decrypt(encdata);
+        var parseData = JSON.parse(decdata);
+        if (parseData != null) {
+          var employeeId = parseData.data.employeeId;
+          var typeId = parseData.data.typeId;
+          if (parseData.data.roleName === "HR") {
+            getUserDetails(employeeId, typeId);
+          } else {
+            returnToLogin();
+          }
+        }
+      } else {
+        returnToLogin();
+      }
+    });
+    function getUserDetails(employeeId, typeId) {
+      $.ajax({
+        type: "GET",
+        url: "https://cloudixemsapipoc.azurewebsites.net/api/employee/getemployeebyemployeeid",
+        dataType: 'json',
+        contentType: "application/json",
+        data: {
+          'employeeId': employeeId,
+          'typeId': typeId
+        },
+        success: function(response) {
+          console.log(response);
+          if (response != null) {
+            $('#memberDetail').html("<h1>Hi, " + response.data.firstName + " " + response.data.lastName + "</h1>" +
+              "<div class= 'description'>" +
+              "Your designation is <strong> " + response.data.designation + "</strong> & amp; reporting to <strong>" +
+              response.data.reportingtoName + "</strong></div>");
+          }
+        },
+        error: function(e) {
+          console.log(e);
+        }
+      });
+      $.ajax({
+        type: "GET",
+        url: "https://cloudixemsapipoc.azurewebsites.net/api/leave/getdasboarddetails",
+        dataType: 'json',
+        contentType: "application/json",
+        data: {
+          'employeeId': employeeId
+        },
+        success: function(response) {
+          if (response != null) {
+            $('#availableCLEL').html("<div>" + response.data.availableCLEL + "<span class='leave-analytics'><small> day(s)</small></span></div>");
+            $('#pendingLeaveApplication').html("<div>" + response.data.pendingLeaveApplication + "<span class='leave-analytics'><small> leave(s)</small></span></div>");
+            $('#reportiesPendingLeave').html("<div>" + response.data.reportiesPendingLeave + "<span class='leave-analytics'><small> leave(s)</small></span></div>");
+          }
+        },
+        error: function(e) {
+          console.log(e);
+        }
+      });
+      $("#overlay").fadeOut();
+    }
+    </script>
+</div>
