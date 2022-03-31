@@ -6,6 +6,7 @@
             <div id="sidebar-wrapper">
                 <nav class="sidebar sidebar-menu-collapsed">
                     <ul class="level1">
+                        <li><a href="#" class="sidebar-nav-icon"><span class="glyphicon glyphicon-align-justify"></span></a></li>
                         <li class="active"><a href="#" title="Dashboard" class="expandable"><span class="glyphicon glyphicon-home collapsed-element">&nbsp;</span><span class="expanded-element">Dashboard</span></a></li>
                         <li><a href="#" title="APIs" class="expandable"><span class="glyphicon glyphicon-cog collapsed-element">&nbsp;</span><span class="expanded-element">Employee Tracker</span></a></li>
                         <li><a href="#" title="APIs" class="expandable"><span class="glyphicon glyphicon-wrench collapsed-element">&nbsp;</span><span class="expanded-element">Leave management</span></a></li>
@@ -67,6 +68,27 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <!--Events-->
+                                <div class="mt-5 ml-2 eventSection">
+                                    <div class="h5"><span class="font-weight-bold" style="color: black;">Events &nbsp;</span><span class="text-muted h6">In March</span></div>
+                                    <div class="mt-2">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="h6 font-weight-bold">
+                                                    Anniversary
+                                                </div>
+                                                <ul id="anniversay" class="list-group">
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="h6 font-weight-bold">Birthday</div>
+                                                <ul id="birthday" class="list-group">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -77,68 +99,104 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script>
-    $(document).ready(function() {
-      $("#overlay").fadeIn();
-      var encdata = localStorage.getItem('ems_users');
-      if (encdata != null && encdata != '') {
-        var decdata = Decrypt(encdata);
-        var parseData = JSON.parse(decdata);
-        if (parseData != null) {
-          var employeeId = parseData.data.employeeId;
-          var typeId = parseData.data.typeId;
-          if (parseData.data.roleName === "HR") {
-            getUserDetails(employeeId, typeId);
-          } else {
-            returnToLogin();
-          }
+        $(document).ready(function () {
+            $("#overlay").fadeIn();
+            var encdata = localStorage.getItem('ems_users');
+            if (encdata != null && encdata != '') {
+                var decdata = Decrypt(encdata);
+                var parseData = JSON.parse(decdata);
+                if (parseData != null) {
+                    var employeeId = parseData.data.employeeId;
+                    var typeId = parseData.data.typeId;
+                    if (parseData.data.roleName === "HR") {
+                        getUserDetails(employeeId, typeId);
+                    } else {
+                        returnToLogin();
+                    }
+                }
+            } else {
+                returnToLogin();
+            }
+        });
+        function getUserDetails(employeeId, typeId) {
+            $.ajax({
+                type: "GET",
+                url: "https://cloudixemsapipoc.azurewebsites.net/api/employee/getemployeebyemployeeid",
+                dataType: 'json',
+                contentType: "application/json",
+                data: {
+                    'employeeId': employeeId,
+                    'typeId': typeId
+                },
+                success: function (response) {
+                    console.log(response);
+                    if (response != null) {
+                        $('#memberDetail').html("<h1>Hi, " + response.data.firstName + " " + response.data.lastName + "</h1>" +
+                            "<div class= 'description'>" +
+                            "Your designation is <strong> " + response.data.designation + "</strong> & amp; reporting to <strong>" +
+                            response.data.reportingtoName + "</strong></div>");
+                    }
+                },
+                error: function (e) {
+                    console.log(e);
+                }
+            });
+            $.ajax({
+                type: "GET",
+                url: "https://cloudixemsapipoc.azurewebsites.net/api/leave/getdasboarddetails",
+                dataType: 'json',
+                contentType: "application/json",
+                data: {
+                    'employeeId': employeeId
+                },
+                success: function (response) {
+                    if (response != null) {
+                        $('#availableCLEL').html("<div>" + response.data.availableCLEL + "<span class='leave-analytics'><small> day(s)</small></span></div>");
+                        $('#pendingLeaveApplication').html("<div>" + response.data.pendingLeaveApplication + "<span class='leave-analytics'><small> leave(s)</small></span></div>");
+                        $('#reportiesPendingLeave').html("<div>" + response.data.reportiesPendingLeave + "<span class='leave-analytics'><small> leave(s)</small></span></div>");
+                    }
+                },
+                error: function (e) {
+                    console.log(e);
+                }
+            });
+            $.ajax({
+                type: "GET",
+                url: "https://cloudixemsapipoc.azurewebsites.net/api/notification/monthlyanniversaryreminder",
+                dataType: 'json',
+                contentType: "application/json",
+                data: {},
+                success: function (response) {
+                    if (response != null) {
+                        for (i = 0; i < response.data.anniverSary.length; i++) {
+                            $('#anniversay').append("<li class='d-inline-block list-group-item' style='border-left: 3px solid rgb(43, 175, 254);'>" +
+                                "<span class= 'font-weight-bold' style = 'color: rgb(43, 175, 254);'>" +
+                                moment(response.data.anniverSary[i].dateOfJoining).format('DD MMM') +
+                                "</span> - <span class='font-weight-bold'> " +
+                                response.data.anniverSary[i].firstName + " " + response.data.anniverSary[i].lastName +
+                                "</span>'s " + getDOJAge(response.data.anniverSary[i].dateOfJoining) + " year work anniversary</li>");
+                        }
+                        for (i = 0; i < response.data.birthDay.length; i++) {
+                            $('#birthday').append("<li class='d-inline-block list-group-item' style='border-left: 3px solid rgb(43, 175, 254);'>" +
+                                "<span class= 'font-weight-bold' style = 'color: rgb(43, 175, 254);'>" +
+                                moment(response.data.birthDay[i].dateOfBirth).format('DD MMM') +
+                                "</span> - <span class='font-weight-bold'> " +
+                                response.data.birthDay[i].firstName + " " + response.data.birthDay[i].lastName +
+                                "</span>'s birthday</li>");
+                        }
+                    }
+                },
+                error: function (e) {
+                    console.log(e);
+                }
+            });
+            $("#overlay").fadeOut();
         }
-      } else {
-        returnToLogin();
-      }
-    });
-    function getUserDetails(employeeId, typeId) {
-      $.ajax({
-        type: "GET",
-        url: "https://cloudixemsapipoc.azurewebsites.net/api/employee/getemployeebyemployeeid",
-        dataType: 'json',
-        contentType: "application/json",
-        data: {
-          'employeeId': employeeId,
-          'typeId': typeId
-        },
-        success: function(response) {
-          console.log(response);
-          if (response != null) {
-            $('#memberDetail').html("<h1>Hi, " + response.data.firstName + " " + response.data.lastName + "</h1>" +
-              "<div class= 'description'>" +
-              "Your designation is <strong> " + response.data.designation + "</strong> & amp; reporting to <strong>" +
-              response.data.reportingtoName + "</strong></div>");
-          }
-        },
-        error: function(e) {
-          console.log(e);
+        function getDOJAge(doj) {
+            var DOJ = new Date(doj);
+            var today = new Date();
+            var ageDoj = Math.floor((today - DOJ) / (365.25 * 24 * 60 * 60 * 1000));
+            return (ordinalSuffixOf(ageDoj));
         }
-      });
-      $.ajax({
-        type: "GET",
-        url: "https://cloudixemsapipoc.azurewebsites.net/api/leave/getdasboarddetails",
-        dataType: 'json',
-        contentType: "application/json",
-        data: {
-          'employeeId': employeeId
-        },
-        success: function(response) {
-          if (response != null) {
-            $('#availableCLEL').html("<div>" + response.data.availableCLEL + "<span class='leave-analytics'><small> day(s)</small></span></div>");
-            $('#pendingLeaveApplication').html("<div>" + response.data.pendingLeaveApplication + "<span class='leave-analytics'><small> leave(s)</small></span></div>");
-            $('#reportiesPendingLeave').html("<div>" + response.data.reportiesPendingLeave + "<span class='leave-analytics'><small> leave(s)</small></span></div>");
-          }
-        },
-        error: function(e) {
-          console.log(e);
-        }
-      });
-      $("#overlay").fadeOut();
-    }
     </script>
 </div>
