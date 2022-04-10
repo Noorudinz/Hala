@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -13,16 +14,15 @@ namespace AdminLTE.MVC.Models
         public int BrandId { get; set; }
         public int CategoryId { get; set; }
         public int SubCategoryId { get; set; }
-        public int ColorId { get; set; }
-        public string? Product_Name { get; set; }
-        public string? Short_Desc { get; set; }
-        public string? SKU { get; set; }
+        public string Product_Name { get; set; }
+        public string Short_Desc { get; set; }
+        public string SKU { get; set; }
         public int ImagesId { get; set; }
         public int StockId { get; set; }
         public int DescId { get; set; }
         public int SpecId { get; set; }
         public int ReviewId { get; set; }
-        public bool? IsActive { get; set; }
+        public bool IsActive { get; set; }
         public DateTime? CreatedOn { get; set; }
         public DateTime? UpdatedOn { get; set; }
 
@@ -40,5 +40,24 @@ namespace AdminLTE.MVC.Models
         public string CategoryName { get; set; }
         public string SubCategoryName { get; set; }
         public string Product_Name { get; set; }
+    }
+
+    public class AddProductName
+    {
+        public int ProductId { get; set; }   
+        public int CategoryId { get; set; }
+        public int SubCategoryId { get; set; }
+        public int[] ColorId { get; set; }
+        public string SKU { get; set; }     
+        public string ProductName { get; set; }
+        public string ShortDesc { get; set; }
+    }
+
+    public class AddProductNameResponse
+    {
+        public int ProductId { get; set; }
+        public string Status { get; set; }
+        public string Message { get; set; }
+
     }
 }

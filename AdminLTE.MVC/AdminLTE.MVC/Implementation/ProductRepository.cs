@@ -1,6 +1,7 @@
 ﻿using AdminLTE.MVC.Data;
 using AdminLTE.MVC.Models;
 using AdminLTE.MVC.Repository;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,63 @@ namespace AdminLTE.MVC.Implementation
         public ProductRepository(ApplicationDbContext appDbContext)
         {
             _context = appDbContext;
+        }
+
+        public AddProductNameResponse AddProduct(AddProductName productAdd)
+        {
+            try
+            {
+                var addProduct = new ProductMaster();
+                if (productAdd != null && productAdd.ProductId == 0)
+                {                  
+                    addProduct.Product_Name = productAdd.ProductName;
+                    addProduct.CategoryId = productAdd.CategoryId;
+                    addProduct.SubCategoryId = productAdd.SubCategoryId;
+                    addProduct.SKU = productAdd.SKU;
+                    addProduct.Short_Desc = productAdd.ShortDesc;
+                    addProduct.CreatedOn = DateTime.Now;
+
+                    _context.Product.Add(addProduct);
+                    _context.SaveChanges();
+
+                    int productId = addProduct.Product_Id;
+                    foreach(var color in productAdd.ColorId)
+                    {
+                        var prodColor = new ProductsColor();
+                        prodColor.ProductId = productId;
+                        prodColor.ColorId = color;
+                        prodColor.IsActive = true;
+                        prodColor.CreatedOn = DateTime.Now;
+
+                        _context.ProductsColor.Add(prodColor);                       
+                    }
+                    _context.SaveChanges();
+
+                    return (new AddProductNameResponse()
+                    {
+                        ProductId = addProduct.Product_Id,
+                        Status = "Success",
+                        Message = "Product Added Successfully !",
+                    });
+                }
+
+                return (new AddProductNameResponse()
+                {
+                    ProductId = addProduct.Product_Id,
+                    Status = "Failure",
+                    Message = "Product Added Failed !",
+                });
+            }
+            catch (Exception ex)
+            {
+                return (new AddProductNameResponse()
+                {
+                    ProductId = 0,
+                    Status = "Failure",
+                    Message = ex.ToString()
+                });
+            }        
+
         }
 
         public List<ProductList> GetAllProductList()
@@ -36,6 +94,11 @@ namespace AdminLTE.MVC.Implementation
                        }).ToList();
 
             return product;
+        }
+
+        public ProductMaster GetProductMasterById(int productId)
+        {
+            return  _context.Product.Where(a => a.Product_Id == productId).FirstOrDefault();
         }
     }
 }
