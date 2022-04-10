@@ -12,9 +12,11 @@ namespace AdminLTE.MVC.Controllers
     public class ProductController : Controller
     {
         private readonly IProduct _productRepo;
-        public ProductController(IProduct context)
+        private readonly IImages _imageRepo;
+        public ProductController(IProduct context, IImages imageContext)
         {
             _productRepo = context;
+            _imageRepo = imageContext;
         }
 
         public IActionResult Index()
@@ -38,9 +40,26 @@ namespace AdminLTE.MVC.Controllers
         {
             var res = _productRepo.AddProduct(productAdd);
 
-            return Json(res); ;
+            return Json(res);
         }
-  
+
+        [HttpGet]
+        public IActionResult ImagesUpload()
+        {
+           // var productMaster = _productRepo.GetProductMasterById(productId);
+
+            // var model = new ProductImages { ProductMaster = productMaster, BrowseImage = null };
+
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult UploadImages(ProductImages productImages)
+        {
+            var imageUpload = _imageRepo.AddImages(productImages);
+            return null;
+        }
+
     }
 
 }

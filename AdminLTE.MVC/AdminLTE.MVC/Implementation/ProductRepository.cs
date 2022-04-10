@@ -95,6 +95,10 @@ namespace AdminLTE.MVC.Implementation
 
             return product;
         }
-        
+
+        public ProductMaster GetProductMasterById(int productId)
+        {
+            return  _context.Product.Where(a => a.Product_Id == productId).FirstOrDefault();
+        }
     }
 }

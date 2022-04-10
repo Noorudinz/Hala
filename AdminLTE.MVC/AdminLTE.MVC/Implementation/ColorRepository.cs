@@ -29,7 +29,7 @@ namespace AdminLTE.MVC.Implementation
 
         public List<Color> GetAllColors()
         {
-            throw new NotImplementedException();
+            return _context.Color.ToList();
         }
 
         public Color GetColorById(int colorId)
