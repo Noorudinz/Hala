@@ -9,5 +9,6 @@ namespace AdminLTE.MVC.Repository
     public interface IProduct
     {
         List<ProductList> GetAllProductList();
+        AddProductNameResponse AddProduct(AddProductName productAdd);
     }
 }

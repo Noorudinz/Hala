@@ -59,6 +59,7 @@
 
             <div class="card-footer">
                 <button type="button" id="savebtn" class="btn btn-info">Save</button>
+                <button type="button" id="sample" class="btn btn-info">Sample</button>
             </div>
 
         </form>
@@ -197,32 +198,29 @@
 
     function addProduct() {
 
-        var product = {
-                'ProductId': 0,
-                'CategoryId': ($('#category').val()),
-                'SubCategoryId': ($('#subCategory').val()),
-                'ColorId': $('#colors').val(),
-                'SKU': $('#skuProduct').val(),
-                'ProductName': $('#productName').val(),
-                'ShortDesc': $('#shortDescription').val()
-            }
+        var productAdd = ({
+            'ProductId': 0,
+            'CategoryId': ($('#category').val()),
+            'SubCategoryId': ($('#subCategory').val()),
+            'ColorId': ($('#colors').val()),
+            'SKU': $('#skuProduct').val(),
+            'ProductName': $('#productName').val(),
+            'ShortDesc': $('#shortDescription').val()
+        });
 
-        console.log(JSON.stringify({ product: product}));
+        console.log(productAdd.ColorId);
 
         //Get Add Product
         $.ajax({
-            type: "POST",
+            type: "GET",
             url: "@Url.Action("AddProduct", "Product")",
             contentType: 'application/json; charset=utf-8',
-            data: JSON.stringify(product),
+            traditional: true,
+            data: productAdd,
             dataType: 'json',
             success: function (response) {
                 if (response != null) {
-                    //var s = '<option value="-1">Please Select a Category</option>';
-                    //for (var i = 0; i < response.length; i++) {
-                    //    s += '<option value="' + response[i].categoryId + '">' + response[i].category_Name + '</option>';
-                    //}
-                    //$("#category").html(s);
+                    console.log(response);
                 }
             },
             error: function (e) {
@@ -231,7 +229,5 @@
         });
 
         }
-
-
 
     </script>

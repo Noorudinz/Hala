@@ -26,5 +26,6 @@ namespace AdminLTE.MVC.Data
         public DbSet<Review> Review { get; set; }
         public DbSet<Stocks> Stocks { get; set; }
         public DbSet<Color> Color { get; set; }
+        public DbSet<ProductsColor> ProductsColor { get; set; }
     }
 }

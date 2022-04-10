@@ -32,6 +32,16 @@ namespace AdminLTE.MVC.Controllers
             return View();
         }
 
+        
+        [HttpGet]
+        public JsonResult AddProduct(AddProductName productAdd)
+        {
+            var res = _productRepo.AddProduct(productAdd);
 
+            return Json(res); ;
+        }
+  
     }
+
 }
+
