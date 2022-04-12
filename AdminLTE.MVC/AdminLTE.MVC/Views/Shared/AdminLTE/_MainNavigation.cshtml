@@ -16,8 +16,8 @@
         <a href="#" class="d-block">Hi, @User.Identity.Name </a>
     </div>
 </div> }
-            else
-            {
+else
+{
 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
     <div class="info">
         <a href="#" class="d-block">Hi, Visitor</a>
@@ -53,14 +53,23 @@
                         </a>
                     </li>
 
-                    <li class="nav-item ">
-                        <a asp-controller="CMS" asp-action="HomeBanner" class="nav-link @Url.MakeActiveClass("CMS","HomeBanner")">
-                            <i class="nav-icon fas fa-lock"></i>
-                            <p>
-                                CMS Details
-                            </p>
-                        </a>
-                    </li>
+                                    <li class="nav-item ">
+                                        <a asp-controller="CMS" asp-action="HomeBanner" class="nav-link @Url.MakeActiveClass("CMS","HomeBanner")">
+                                            <i class="nav-icon fas fa-lock"></i>
+                                            <p>
+                                                CMS Details
+                                            </p>
+                                        </a>
+                                    </li>
+
+                                                    <li class="nav-item ">
+                                                        <a asp-controller="Product" asp-action="Index" class="nav-link @Url.MakeActiveClass("Product","Index")">
+                                                            <i class="nav-icon fas fa-lock"></i>
+                                                            <p>
+                                                                Product Details
+                                                            </p>
+                                                        </a>
+                                                    </li>
 }
             </ul>
         </nav>

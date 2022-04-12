@@ -10,5 +10,7 @@ namespace AdminLTE.MVC.Repository
     {
         List<ProductList> GetAllProductList();
         AddProductNameResponse AddProduct(AddProductName productAdd);
+        ProductMaster GetProductMasterById(int productId);
+
     }
 }
