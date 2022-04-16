@@ -56,7 +56,8 @@ namespace AdminLTE.MVC
             services.AddScoped<IProduct, ProductRepository>();
             services.AddScoped<ICategory, CategoryRepository>();
             services.AddScoped<ISubCategory, SubCategoryRepository>();
-            services.AddScoped<IColor, ColorRepository>();            
+            services.AddScoped<IColor, ColorRepository>();
+            services.AddScoped<IImages, ImagesRepository>();
 
         }
 

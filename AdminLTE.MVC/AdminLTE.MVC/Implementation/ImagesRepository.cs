@@ -25,34 +25,34 @@ namespace AdminLTE.MVC.Implementation
         }
 
         [Obsolete]
-        public AddProductNameResponse AddImages(ProductImages productImages)
+        public AddProductNameResponse AddImages(BrowseImage productImages, ProductMaster productMaster)
         {
             string Main_URL = null, URL1 = null, URL2 = null, URL3 = null;
             if(productImages != null)
             {
                 string uploadsFolder = Path.Combine(_hostingEnvironment.WebRootPath, "ProductImages");
 
-                Main_URL = Guid.NewGuid().ToString() + "_" + productImages.BrowseImage.Main_URL.FileName;
+                Main_URL = Guid.NewGuid().ToString() + "_" + productImages.Main_URL.FileName;
                 string filePath_Main_URL = Path.Combine(uploadsFolder, Main_URL);
-                productImages.BrowseImage.Main_URL.CopyTo(new FileStream(filePath_Main_URL, FileMode.Create));
+                productImages.Main_URL.CopyTo(new FileStream(filePath_Main_URL, FileMode.Create));
 
-                URL1 = Guid.NewGuid().ToString() + "_" + productImages.BrowseImage.URL_1.FileName;
+                URL1 = Guid.NewGuid().ToString() + "_" + productImages.URL_1.FileName;
                 string filePath_URL1 = Path.Combine(uploadsFolder, URL1);
-                productImages.BrowseImage.URL_1.CopyTo(new FileStream(filePath_URL1, FileMode.Create));
+                productImages.URL_1.CopyTo(new FileStream(filePath_URL1, FileMode.Create));
 
-                URL2 = Guid.NewGuid().ToString() + "_" + productImages.BrowseImage.URL_2.FileName;
+                URL2 = Guid.NewGuid().ToString() + "_" + productImages.URL_2.FileName;
                 string filePath_URL2 = Path.Combine(uploadsFolder, URL2);
-                productImages.BrowseImage.URL_2.CopyTo(new FileStream(filePath_URL2, FileMode.Create));
+                productImages.URL_2.CopyTo(new FileStream(filePath_URL2, FileMode.Create));
 
-                URL3 = Guid.NewGuid().ToString() + "_" + productImages.BrowseImage.URL_3.FileName;
+                URL3 = Guid.NewGuid().ToString() + "_" + productImages.URL_3.FileName;
                 string filePath_URL3 = Path.Combine(uploadsFolder, URL3);
-                productImages.BrowseImage.URL_3.CopyTo(new FileStream(filePath_URL3, FileMode.Create));
+                productImages.URL_3.CopyTo(new FileStream(filePath_URL3, FileMode.Create));
             }
           
-            if(productImages.ProductMaster.Product_Id != 0)
+            if(productMaster.Product_Id != 0)
             {
                 var images = new Images();
-                images.Product_Id = productImages.ProductMaster.Product_Id;
+                images.Product_Id = productMaster.Product_Id;
                 images.Main_URL = Main_URL;
                 images.URL_1 = URL1;
                 images.URL_2 = URL2;
@@ -66,11 +66,11 @@ namespace AdminLTE.MVC.Implementation
                 int imageId = images.ImagesId;
 
                 var updateProductImages = _context.Product
-                       .FirstOrDefault(e => e.Product_Id == productImages.ProductMaster.Product_Id);
+                       .FirstOrDefault(e => e.Product_Id == productMaster.Product_Id);
 
                 if(updateProductImages != null)
                 {
-                    updateProductImages.Product_Id = productImages.ProductMaster.Product_Id;
+                    updateProductImages.Product_Id = productMaster.Product_Id;
                     updateProductImages.ImagesId = imageId;
                     updateProductImages.UpdatedOn = DateTime.Now;
 
@@ -78,7 +78,7 @@ namespace AdminLTE.MVC.Implementation
 
                     return (new AddProductNameResponse()
                     {
-                        ProductId = productImages.ProductMaster.Product_Id,
+                        ProductId = productMaster.Product_Id,
                         Status = "Success",
                         Message = "Images Added Successfully !",
                     });

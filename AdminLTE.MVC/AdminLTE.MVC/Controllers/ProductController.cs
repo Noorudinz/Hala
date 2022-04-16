@@ -40,23 +40,28 @@ namespace AdminLTE.MVC.Controllers
         {
             var res = _productRepo.AddProduct(productAdd);
 
+            TempData["ProductId"] = res.ProductId;
+            TempData["ProductName"] = productAdd.ProductName;
+
             return Json(res);
         }
 
         [HttpGet]
         public IActionResult ImagesUpload()
         {
-           // var productMaster = _productRepo.GetProductMasterById(productId);
-
-            // var model = new ProductImages { ProductMaster = productMaster, BrowseImage = null };
+            ViewBag.ProductId = Convert.ToInt32(TempData["ProductId"]);
+            ViewBag.ProductName = Convert.ToString(TempData["ProductName"]);
 
             return View();
         }
 
         [HttpPost]
-        public IActionResult UploadImages(ProductImages productImages)
-        {
-            var imageUpload = _imageRepo.AddImages(productImages);
+        public IActionResult UploadImages(BrowseImage productImages)
+        {          
+            int productId = Convert.ToInt32(TempData["ProductId"]);
+            var product = _productRepo.GetProductMasterById(productId);
+
+            var imageUpload = _imageRepo.AddImages(productImages, product);
             return null;
         }
 

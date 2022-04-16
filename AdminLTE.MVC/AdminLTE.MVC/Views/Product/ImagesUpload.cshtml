@@ -1,0 +1,99 @@
+﻿@model BrowseImage
+
+@{
+    Layout = "~/Views/Shared/AdminLTE/_Layout.cshtml";
+    TempData.Keep("ProductId");
+
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+            <h2>Add Product Images</h2>
+        </div>
+        <div class="col-7">
+            <span style="color: red;" id="errorMsg"></span>
+        </div>
+        <div class="col-2">
+            <a href="/Product/Index" class="btn btn-primary" style="float: right;">Back</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <form enctype="multipart/form-data" asp-controller="Product" asp-action="UploadImages"
+              method="post" class="form-horizontal">
+            <div class="card-body">
+                <input type="hidden" value="@ViewBag.ProductId"  />
+                @*<input type="hidden" asp-for="Product_Id"  />*@
+                <div class="form-group">
+                    <label for="exampleInputFile">Product Name</label>
+                    <div class="input-group">
+                        <div class="custom-file">
+                            <input disabled class="form-control" id="productName" value="@ViewBag.ProductName">
+                            @*<input disabled class="form-control" id="productName" asp-for="Product_Name">*@
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputFile">Main Image</label>
+                    <div class="input-group">
+                        <div class="custom-file">
+                            <input asp-for="Main_URL" type="file" class="custom-file-input" id="exampleInputFile">
+                            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputFile">Image 1</label>
+                    <div class="input-group">
+                        <div class="custom-file">
+                            <input asp-for="URL_1" type="file" class="custom-file-input" id="exampleInputFile">
+                            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputFile">Image 2</label>
+                    <div class="input-group">
+                        <div class="custom-file">
+                            <input asp-for="URL_2" type="file" class="custom-file-input" id="exampleInputFile">
+                            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputFile">Image 3</label>
+                    <div class="input-group">
+                        <div class="custom-file">
+                            <input asp-for="URL_3" type="file" class="custom-file-input" id="exampleInputFile">
+                            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-footer">
+                <button type="submit" id="savebtn" class="btn btn-info">Save</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('.custom-file-input').on("change", function () {
+                var fileName = $(this).val().split("\\").pop();
+                $(this).next('.custom-file-label').html(fileName);
+            });
+        }); '
+
+        @*$('#savebtn').click(function () {
+
+            var productImages = {
+                ProductId = @ViewBag.ProductId,
+                ProductName = @ViewBag.ProductName,                
+            }
+
+        });*@
+    </script>

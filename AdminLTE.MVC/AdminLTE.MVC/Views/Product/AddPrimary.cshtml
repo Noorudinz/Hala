@@ -8,8 +8,11 @@
         <div class="col-3">
             <h2>Add Product</h2>
         </div>
-        <div class="col-9">
+        <div class="col-7">
             <span style="color: red;" id="errorMsg"></span>
+        </div>
+        <div class="col-2">
+            <a href="/Product/Index" class="btn btn-primary" style="float: right;">Back</a>
         </div>
     </div>
 
@@ -59,7 +62,6 @@
 
             <div class="card-footer">
                 <button type="button" id="savebtn" class="btn btn-info">Save</button>
-                <button type="button" id="sample" class="btn btn-info">Sample</button>
             </div>
 
         </form>
@@ -219,8 +221,18 @@
             data: productAdd,
             dataType: 'json',
             success: function (response) {
+                console.log(response);
                 if (response != null) {
-                    console.log(response);
+                    if (response.status === 'Success') {
+                        window.location.href = '/Product/ImagesUpload/';
+                        //$.ajax({
+                        //    type: "GET",
+                        //    url: "/Product/ImagesUpload/",
+                        //    contentType: 'application/json; charset=utf-8',
+                        //    data: { 'productId': response.productId },
+                        //    dataType: 'json',
+                        //});                      
+                    }
                 }
             },
             error: function (e) {
