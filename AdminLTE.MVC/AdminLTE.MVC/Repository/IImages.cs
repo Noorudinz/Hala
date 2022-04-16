@@ -10,7 +10,7 @@ namespace AdminLTE.MVC.Repository
     {
         List<Images> GetAllImages();
         Images GetImagesById(int imagesId);
-        AddProductNameResponse AddImages(ProductImages productImages);
+        AddProductNameResponse AddImages(BrowseImage productImages, ProductMaster product);
         Images UpdateImages(Images images);
         void DeleteImages(int imagesId);
     }
