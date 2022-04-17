@@ -29,7 +29,7 @@ namespace AdminLTE.MVC.Implementation
 
         public IEnumerable<Brand> GetAllBrands()
         {
-            throw new NotImplementedException();
+            return _context.Brand.ToList();
         }
 
         public Brand GetBrandById(int brandId)

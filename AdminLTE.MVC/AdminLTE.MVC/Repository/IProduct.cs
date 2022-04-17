@@ -8,9 +8,11 @@ namespace AdminLTE.MVC.Repository
 {
     public interface IProduct
     {
-        List<ProductList> GetAllProductList();
+        List<ProductList> GetAllActiveProductList();
+        List<ProductList> GetAllInActiveProductList();
         AddProductNameResponse AddProduct(AddProductName productAdd);
         ProductMaster GetProductMasterById(int productId);
+        AddProductNameResponse AddProductStockInfo(StockInformation stockInformation);
 
     }
 }
