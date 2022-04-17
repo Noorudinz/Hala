@@ -21,12 +21,19 @@ namespace AdminLTE.MVC.Controllers
 
         public IActionResult Index()
         {
-            var products = _productRepo.GetAllProductList();
+            var products = _productRepo.GetAllActiveProductList();
             ViewBag.DataSource = products;
             return View();
             //var Order = OrdersDetails.GetAllRecords();
             //ViewBag.DataSource = Order;
             //return View();
+        }
+
+        public IActionResult InactiveList()
+        {
+            var products = _productRepo.GetAllInActiveProductList();
+            ViewBag.DataSource = products;
+            return View();
         }
 
         public IActionResult AddPrimary()
@@ -62,7 +69,37 @@ namespace AdminLTE.MVC.Controllers
             var product = _productRepo.GetProductMasterById(productId);
 
             var imageUpload = _imageRepo.AddImages(productImages, product);
-            return null;
+            return RedirectToAction("StockInfo");
+        }
+
+        [HttpGet]
+        public IActionResult StockInfo()
+        {
+            int productId = Convert.ToInt32(TempData["ProductId"]);
+            var product = _productRepo.GetProductMasterById(productId);
+
+            ViewBag.ProductId = productId;
+            ViewBag.ProductName = Convert.ToString(product.Product_Name);
+
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult StockInfo(StockInformation stockInformation)
+        {
+            int productId = Convert.ToInt32(TempData["ProductId"]);
+            stockInformation.ProductId = productId;
+            var product = _productRepo.AddProductStockInfo(stockInformation);
+
+            return RedirectToAction("Index");
+        }
+
+        [Route("Product/EditPrimary/{productId:int}")]
+        public IActionResult EditPrimary(int productId)
+        {            
+            var product = _productRepo.GetProductMasterById(productId);
+          
+            return View(product);
         }
 
     }

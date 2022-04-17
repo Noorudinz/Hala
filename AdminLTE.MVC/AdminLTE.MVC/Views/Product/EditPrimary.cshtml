@@ -1,12 +1,11 @@
-﻿
-@{
+﻿@{
     Layout = "~/Views/Shared/AdminLTE/_Layout.cshtml";
 }
 
 <div class="container">
     <div class="row">
         <div class="col-3">
-            <h2>Add Product</h2>
+            <h2>Edit Product</h2>
         </div>
         <div class="col-7">
             <span style="color: red;" id="errorMsg"></span>
@@ -17,6 +16,7 @@
     </div>
 
     <div class="container">
+        <input type="hidden" value="@ViewBag.ProductId"  />
         <form class="form-horizontal">
             <div class="card-body">
                 <div class="form-group row">

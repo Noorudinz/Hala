@@ -12,8 +12,7 @@
     commands.Add(new { type = "delete", buttonOption = new { iconCss = "e-icons e-delete", cssClass = "e-flat" } });
 }
 
-<button class="btn btn-outline-primary" onclick="btnClick(event)">Add Product</button>
-<a href="/Product/InactiveList" class="float-sm-right btn btn-default"> Inactive List</a>
+<a href="/Product/Index" class="btn btn-default"> Active List</a>
 <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="273" commandClick="commandClick">
     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Batch"></e-grid-editSettings>
     <e-grid-columns>
@@ -31,8 +30,8 @@
         //console.log(args.commandColumn.type);
         //alert(JSON.stringify(args.rowData));  // display row data
         if (args.commandColumn.type === 'edit') {
-            window.location.href = "/Product/EditPrimary/" + args.rowData.Product_Id ;
-         }
+            alert('edit');
+        }
 
         if (args.commandColumn.type === 'delete') {
             alert('delete');
@@ -42,7 +41,7 @@
     var isAddable = true;
 
     function btnClick(args) {
-        window.location.href = "/Product/AddPrimary";
+        //window.location.href = "/Product/AddPrimary";
     }
 
 

@@ -47,6 +47,7 @@ namespace AdminLTE.MVC.Models
         public int ProductId { get; set; }   
         public int CategoryId { get; set; }
         public int SubCategoryId { get; set; }
+        public int BrandId { get; set; }
         public int[] ColorId { get; set; }
         public string SKU { get; set; }     
         public string ProductName { get; set; }
@@ -59,5 +60,28 @@ namespace AdminLTE.MVC.Models
         public string Status { get; set; }
         public string Message { get; set; }
 
+    }
+
+    public class StockInformation
+    {
+        public int ProductId { get; set; }
+        public int AvailStock { get; set; }
+        public decimal Price { get; set; }
+        public string Description { get; set; }
+        public string Weight { get; set; }
+        public string Dimensions { get; set; }            
+        public string Size { get; set; }
+        public string Color { get; set; }
+        public string Guarantee { get; set; }
+
+    }
+
+    public class EditProductMaster
+    {
+        public ProductMaster ProductMaster { get; set; }
+        public List<Category> Category { get; set; }
+        public List<SubCategory> SubCategory { get; set; }
+        public List<Brand> Brand { get; set; }
+        public List<Color> Color { get; set; }
     }
 }
