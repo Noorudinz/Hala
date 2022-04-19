@@ -13,10 +13,19 @@ namespace AdminLTE.MVC.Controllers
     {
         private readonly IProduct _productRepo;
         private readonly IImages _imageRepo;
-        public ProductController(IProduct context, IImages imageContext)
+        private readonly ICategory _categoryRepo;
+        private readonly ISubCategory _subCategoryRepo;
+        private readonly IBrand _brandRepo;
+        private readonly IColor _colorRepo;
+        public ProductController(IProduct context, IImages imageContext, ICategory categoryContext,
+            ISubCategory subCategoryContext, IBrand brandContext, IColor colorContext)
         {
             _productRepo = context;
             _imageRepo = imageContext;
+            _categoryRepo = categoryContext;
+            _subCategoryRepo = subCategoryContext;
+            _brandRepo = brandContext;
+            _colorRepo = colorContext;
         }
 
         public IActionResult Index()
@@ -98,8 +107,14 @@ namespace AdminLTE.MVC.Controllers
         public IActionResult EditPrimary(int productId)
         {            
             var product = _productRepo.GetProductMasterById(productId);
-          
-            return View(product);
+            var editProductMaster = new EditProductMaster();
+            editProductMaster.ProductMaster = product;
+            editProductMaster.ColorId = _colorRepo.GetColorByProductId(product.Product_Id);
+            editProductMaster.Category = _categoryRepo.GetAllCategorys();
+            editProductMaster.SubCategory = _subCategoryRepo.GetAllSubCategorysByCategoryId(product.CategoryId);
+            editProductMaster.Brand = _brandRepo.GetAllBrands().ToList();
+            editProductMaster.Color = _colorRepo.GetAllColors();
+            return View(editProductMaster);
         }
 
     }
