@@ -117,6 +117,12 @@ namespace AdminLTE.MVC.Controllers
             return View(editProductMaster);
         }
 
+        [HttpPost]
+        public IActionResult EditPrimary(AddProductName productUpdate)
+        {
+            return null;
+        }
+
     }
 
 }
