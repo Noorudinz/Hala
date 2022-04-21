@@ -17,8 +17,9 @@
     </div>
 
     <div class="container">
-        <input type="hidden" asp-for="ProductMaster.Product_Id" id="productId" />
-        <form class="form-horizontal" method="post">
+       
+        <form class="form-horizontal" asp-controller="Product" asp-action="EditPrimary">
+            <input type="hidden" asp-for="ProductMaster.Product_Id" id="productId" />
             <div class="card-body">
                 <div class="form-group row">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">Category</label>
@@ -69,7 +70,7 @@
             </div>
 
             <div class="card-footer">
-                <button type="button" id="savebtn" class="btn btn-info">Next</button>
+                <button type="submit" class="btn btn-info">Next</button>
             </div>
 
         </form>
@@ -80,136 +81,7 @@
         $(document).ready(function () {
             $('#errorMsg').text('');
        
-    });
-
-    //Get SubCategory On Select Category
-    $('#category').on('change', function () {
-        //alert(this.value);
-        $.ajax({
-            type: "GET",
-            url: "@Url.Action("GetSubCategoryByCategoryId", "SubCategory")",
-            contentType: 'application/json; charset=utf-8',
-            data: { 'selectedId': this.value },
-            dataType: 'json',
-            success: function (response) {
-                if (response != null) {
-                    $('#subCategory').prop("disabled", false);
-                    var s = '<option value="-1">Please Select a SubCategory</option>';
-                    for (var i = 0; i < response.length; i++) {
-                        s += '<option value="' + response[i].subCategoryId + '">' + response[i].subCategory_Name + '</option>';
-                    }
-                    $("#subCategory").html(s);
-                }
-            },
-            error: function (e) {
-                console.log(e);
-            }
-        });
-    });
-
-        $('#savebtn').click(function () {
-            updateProduct();
-            //try
-            //{
-            //    if (validateCategory() && validateSubCategory() && validateColor() && validateRequiredFields()) {
-            //        updateProduct();
-            //    }
-            //} catch (e) {
-            //    console.log(e);
-            //}
-
         });
 
-    function validateCategory() {
-        var category = ($('#category').val());
-        if (category != null && category != -1) {
-            return true;
-        } else {
-            $('#errorMsg').text('* Select proper category');
-        }
-    }
-
-    function validateSubCategory() {
-        var subCategory = ($('#subCategory').val());
-        if (subCategory != null && subCategory != -1) {
-            return true;
-        } else {
-            $('#errorMsg').text('* Select proper sub category');
-        }
-    }
-
-    function validateColor() {
-        var colors = ($('#colors').val());
-        if (colors != null && colors != -1 && colors != '') {
-            return true;
-        } else {
-            $('#errorMsg').text('* Select atleast one color');
-        }
-    }
-
-    function validateRequiredFields() {
-        var skuProduct = $('#skuProduct').val();
-        var productName = $('#productName').val();
-        var shortDescription = $('#shortDescription').val();
-        if (skuProduct == '') {
-            $('#errorMsg').text('* SKU required');
-            return false;
-        }
-        if (productName == '') {
-            $('#errorMsg').text('* Product Name required');
-            return false;
-        }
-        if (shortDescription == '') {
-            $('#errorMsg').text('* Short Description required');
-            return false;
-        }
-
-        return true;
-
-        }
-
-    function updateProduct() {
-
-        var productUpdate = ({
-            'ProductId': parseInt($('#productId').val()) ,
-            'CategoryId': parseInt($('#category').val()),
-            'SubCategoryId': parseInt($('#subCategory').val()),
-            'BrandId': parseInt($('#brand').val()),
-            'ColorId': ($('#colors').val()),
-            'SKU': $('#skuProduct').val(),
-            'ProductName': $('#productName').val(),
-            'ShortDesc': $('#shortDescription').val()
-        });
-
-        console.log(productUpdate);
-        //Get Add Product
-        $.ajax({
-            type: "POST",
-            url: "@Url.Action("EditPrimary", "Product")",
-            contentType: 'application/json; charset=utf-8',
-            traditional: true,
-            data: JSON.stringify({ productUpdate }),
-            dataType: 'json',
-            success: function (response) {
-                console.log(response);
-                if (response != null) {
-                    if (response.status === 'Success') {
-                        window.location.href = '/Product/ImagesUpload/';
-                        //$.ajax({
-                        //    type: "GET",
-                        //    url: "/Product/ImagesUpload/",
-                        //    contentType: 'application/json; charset=utf-8',
-                        //    data: { 'productId': response.productId },
-                        //    dataType: 'json',
-                        //});
-                    }
-                }
-            },
-            error: function (e) {
-                console.log(e);
-            }
-        });
-
-        }
 
     </script>

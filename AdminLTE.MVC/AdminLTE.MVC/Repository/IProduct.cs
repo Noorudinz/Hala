@@ -11,6 +11,7 @@ namespace AdminLTE.MVC.Repository
         List<ProductList> GetAllActiveProductList();
         List<ProductList> GetAllInActiveProductList();
         AddProductNameResponse AddProduct(AddProductName productAdd);
+        AddProductNameResponse UpdateProduct(EditProductMaster productUpdate);
         ProductMaster GetProductMasterById(int productId);
         AddProductNameResponse AddProductStockInfo(StockInformation stockInformation);
 

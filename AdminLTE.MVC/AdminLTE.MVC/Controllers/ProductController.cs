@@ -103,6 +103,7 @@ namespace AdminLTE.MVC.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
         [Route("Product/EditPrimary/{productId:int}")]
         public IActionResult EditPrimary(int productId)
         {            
@@ -118,8 +119,10 @@ namespace AdminLTE.MVC.Controllers
         }
 
         [HttpPost]
-        public IActionResult EditPrimary(AddProductName productUpdate)
+       public Task<IActionResult> EditPrimary(EditProductMaster productUpdate)
         {
+            var res = _productRepo.UpdateProduct(productUpdate);
+
             return null;
         }
 
