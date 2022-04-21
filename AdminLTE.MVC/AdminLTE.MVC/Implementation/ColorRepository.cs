@@ -37,6 +37,12 @@ namespace AdminLTE.MVC.Implementation
             throw new NotImplementedException();
         }
 
+        public int[] GetColorByProductId(int productId)
+        {
+            return _context.ProductsColor.Where(e => e.ProductId == productId)
+                .Select(a => a.ColorId).ToArray();
+        }
+
         public Color UpdateColor(Color color)
         {
             throw new NotImplementedException();

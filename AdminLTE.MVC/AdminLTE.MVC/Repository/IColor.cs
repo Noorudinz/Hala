@@ -10,6 +10,7 @@ namespace AdminLTE.MVC.Repository
     {
         List<Color> GetAllColors();
         Color GetColorById(int colorId);
+        int[] GetColorByProductId(int productId);
         Color AddColor(Color color);
         Color UpdateColor(Color color);
         void DeleteColor(int colorId);

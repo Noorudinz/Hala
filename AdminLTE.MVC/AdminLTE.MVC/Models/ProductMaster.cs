@@ -79,6 +79,7 @@ namespace AdminLTE.MVC.Models
     public class EditProductMaster
     {
         public ProductMaster ProductMaster { get; set; }
+        public int[] ColorId { get; set; }
         public List<Category> Category { get; set; }
         public List<SubCategory> SubCategory { get; set; }
         public List<Brand> Brand { get; set; }

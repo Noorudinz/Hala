@@ -41,7 +41,6 @@ namespace AdminLTE.MVC.Implementation
                         var prodColor = new ProductsColor();
                         prodColor.ProductId = productId;
                         prodColor.ColorId = color;
-                        prodColor.IsActive = true;
                         prodColor.CreatedOn = DateTime.Now;
 
                         _context.ProductsColor.Add(prodColor);                       
@@ -213,6 +212,66 @@ namespace AdminLTE.MVC.Implementation
         public ProductMaster GetProductMasterById(int productId)
         {
             return  _context.Product.Where(a => a.Product_Id == productId).FirstOrDefault();
+        }
+
+        public AddProductNameResponse UpdateProduct(EditProductMaster productUpdate)
+        {
+            try
+            {
+                int productId = productUpdate.ProductMaster.Product_Id;
+
+                var addProduct = _context.Product.Where(a => a.Product_Id == productId).FirstOrDefault();
+                if (productUpdate != null && productUpdate.ProductMaster.Product_Id > 0)
+                {
+                    addProduct.Product_Name = productUpdate.ProductMaster.Product_Name;
+                    addProduct.CategoryId = productUpdate.ProductMaster.CategoryId;
+                    addProduct.SubCategoryId = productUpdate.ProductMaster.SubCategoryId;
+                    addProduct.BrandId = productUpdate.ProductMaster.BrandId;
+                    addProduct.SKU = productUpdate.ProductMaster.SKU;
+                    addProduct.Short_Desc = productUpdate.ProductMaster.Short_Desc;
+                    addProduct.UpdatedOn = DateTime.Now;
+
+                    _context.SaveChanges();
+
+                    var productColor = _context.ProductsColor.Where(a => a.ProductId == productId).ToList();
+                    _context.ProductsColor.RemoveRange(productColor);
+                    _context.SaveChanges();
+
+                    foreach (var color in productUpdate.ColorId)
+                    {
+                        var prodColor = new ProductsColor();
+                        prodColor.ProductId = productId;
+                        prodColor.ColorId = color;
+                        prodColor.CreatedOn = DateTime.Now;
+
+                        _context.ProductsColor.Add(prodColor);
+                    }
+                    _context.SaveChanges();
+
+                    return (new AddProductNameResponse()
+                    {
+                        ProductId = addProduct.Product_Id,
+                        Status = "Success",
+                        Message = "Product Updated Successfully !",
+                    });
+                }
+
+                return (new AddProductNameResponse()
+                {
+                    ProductId = addProduct.Product_Id,
+                    Status = "Failure",
+                    Message = "Product Update Failed !",
+                });
+            }
+            catch (Exception ex)
+            {
+                return (new AddProductNameResponse()
+                {
+                    ProductId = 0,
+                    Status = "Failure",
+                    Message = ex.ToString()
+                });
+            }
         }
     }
 }
