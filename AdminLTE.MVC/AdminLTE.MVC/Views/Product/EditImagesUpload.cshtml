@@ -1,0 +1,191 @@
+﻿@model EditBrowseImage
+
+@{
+    Layout = "~/Views/Shared/AdminLTE/_Layout.cshtml";
+    TempData.Keep("ProductId");
+    var photoPathMain = "~/ProductImages/" + ( Model.Main_URL ?? "noImage.png");
+    var photoPathURL1 = "~/ProductImages/" + (Model.URL_1 ?? "noImage.png");
+    var photoPathURL2 = "~/ProductImages/" + (Model.URL_2 ?? "noImage.png");
+    var photoPathURL3 = "~/ProductImages/" + (Model.URL_3 ?? "noImage.png");
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+            <h2>Edit Product Images</h2>
+        </div>
+        <div class="col-7">
+            <span style="color: red;" id="errorMsg"></span>
+        </div>
+        <div class="col-2">
+            <a href="/Product/Index" class="btn btn-primary" style="float: right;">Back</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <form enctype="multipart/form-data" asp-controller="Product" asp-action="EditUploadImages"
+              method="post" class="form-horizontal">
+            <div class="card-body">
+                <input type="hidden" value="@ViewBag.ProductId" />
+                <div class="form-group">
+                    <label for="exampleInputFile">Product Name</label>
+                    <div class="input-group">
+                        <div class="custom-file">
+                            <input disabled class="form-control" id="productName" value="@ViewBag.ProductName">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputFile">Main Image</label>
+                    <div class="input-group">
+                        <div class="custom-file">
+                            <input asp-for="Main_URL_File" type="file" class="custom-file-input" id="mainFile">
+                            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row col-sm-4 offset-4 dvMainImage">
+                    <img class="imageThumbnail" src="@photoPathMain" asp-append-version="true" />
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputFile">Image 1</label>
+                    <div class="input-group">
+                        <div class="custom-file">
+                            <input asp-for="URL_1_File" type="file" class="custom-file-input" id="url1File">
+                            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row col-sm-4 offset-4 dvURL1Image">
+                    <img class="imageThumbnail" src="@photoPathURL1" asp-append-version="true" />
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputFile">Image 2</label>
+                    <div class="input-group">
+                        <div class="custom-file">
+                            <input asp-for="URL_2_File" type="file" class="custom-file-input" id="url2File">
+                            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row col-sm-4 offset-4 dvURL2Image">
+                    <img class="imageThumbnail" src="@photoPathURL2" asp-append-version="true" />
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputFile">Image 3</label>
+                    <div class="input-group">
+                        <div class="custom-file">
+                            <input asp-for="URL_3_File" type="file" class="custom-file-input" id="url3File">
+                            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row col-sm-4 offset-4 dvURL3Image">
+                    <img class="imageThumbnail" src="@photoPathURL3" asp-append-version="true" />
+                </div>
+            </div>
+
+            <div class="card-footer">
+                <button type="submit" id="savebtn" class="btn btn-info">Next</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('.custom-file-input').on("change", function () {
+                var fileName = $(this).val().split("\\").pop();
+                $(this).next('.custom-file-label').html(fileName);
+            });
+        });
+
+        $(function () {
+
+            $("#mainFile").change(function () {
+                $(".dvMainImage").html("");
+                var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.jpg|.jpeg|.gif|.png|.bmp)$/;
+                if (regex.test($(this).val().toLowerCase())) {
+                    if (typeof (FileReader) != "undefined") {
+                        $(".dvMainImage").show();
+                        $(".dvMainImage").append("<img />");
+                        var reader = new FileReader();
+                        reader.onload = function (e) {
+                            $(".dvMainImage img").attr("src", e.target.result);
+                            $(".dvMainImage img").attr("style", "height:200px;width: 200px");
+                        }
+                        reader.readAsDataURL($(this)[0].files[0]);
+                    } else {
+                        alert("This browser does not support FileReader.");
+                    }
+                } else {
+                    alert("Please upload a valid image file.");
+                }
+            });
+
+            $("#url1File").change(function () {
+                $(".dvURL1Image").html("");
+                var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.jpg|.jpeg|.gif|.png|.bmp)$/;
+                if (regex.test($(this).val().toLowerCase())) {
+                    if (typeof (FileReader) != "undefined") {
+                        $(".dvURL1Image").show();
+                        $(".dvURL1Image").append("<img />");
+                        var reader = new FileReader();
+                        reader.onload = function (e) {
+                            $(".dvURL1Image img").attr("src", e.target.result);
+                            $(".dvURL1Image img").attr("style", "height:200px;width: 200px");
+                        }
+                        reader.readAsDataURL($(this)[0].files[0]);
+                    } else {
+                        alert("This browser does not support FileReader.");
+                    }
+                } else {
+                    alert("Please upload a valid image file.");
+                }
+            });
+
+            $("#url2File").change(function () {
+                $(".dvURL2Image").html("");
+                var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.jpg|.jpeg|.gif|.png|.bmp)$/;
+                if (regex.test($(this).val().toLowerCase())) {
+                    if (typeof (FileReader) != "undefined") {
+                        $(".dvURL2Image").show();
+                        $(".dvURL2Image").append("<img />");
+                        var reader = new FileReader();
+                        reader.onload = function (e) {
+                            $(".dvURL2Image img").attr("src", e.target.result);
+                            $(".dvURL2Image img").attr("style", "height:200px;width: 200px");
+                        }
+                        reader.readAsDataURL($(this)[0].files[0]);
+                    } else {
+                        alert("This browser does not support FileReader.");
+                    }
+                } else {
+                    alert("Please upload a valid image file.");
+                }
+            });
+
+            $("#url3File").change(function () {
+                $(".dvURL3Image").html("");
+                var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.jpg|.jpeg|.gif|.png|.bmp)$/;
+                if (regex.test($(this).val().toLowerCase())) {
+                    if (typeof (FileReader) != "undefined") {
+                        $(".dvURL3Image").show();
+                        $(".dvURL3Image").append("<img />");
+                        var reader = new FileReader();
+                        reader.onload = function (e) {
+                            $(".dvURL3Image img").attr("src", e.target.result);
+                            $(".dvURL3Image img").attr("style", "height:200px;width: 200px");
+                        }
+                        reader.readAsDataURL($(this)[0].files[0]);
+                    } else {
+                        alert("This browser does not support FileReader.");
+                    }
+                } else {
+                    alert("Please upload a valid image file.");
+                }
+            });
+        });
+
+      </script>

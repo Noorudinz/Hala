@@ -119,13 +119,74 @@ namespace AdminLTE.MVC.Controllers
         }
 
         [HttpPost]
-       public Task<IActionResult> EditPrimary(EditProductMaster productUpdate)
+       public IActionResult EditPrimary(EditProductMaster productUpdate)
         {
             var res = _productRepo.UpdateProduct(productUpdate);
 
-            return null;
+            TempData["ProductId"] = res.ProductId;
+            TempData["ProductName"] = productUpdate.ProductMaster.Product_Name;
+
+            return RedirectToAction("EditImagesUpload");
         }
 
+        [HttpGet]
+        public IActionResult EditImagesUpload()
+        {
+            int productId = Convert.ToInt32(TempData["ProductId"]);
+            ViewBag.ProductId = productId;
+            ViewBag.ProductName = Convert.ToString(TempData["ProductName"]);
+
+            var browseImage = new EditBrowseImage();
+            var imagesPath = _imageRepo.GetImagesByProductId(productId);
+
+            browseImage.Main_URL = imagesPath.Main_URL;
+            browseImage.URL_1 = imagesPath.URL_1;
+            browseImage.URL_2 = imagesPath.URL_2;
+            browseImage.URL_3 = imagesPath.URL_3;
+
+            return View(browseImage);
+        }
+
+        [HttpPost]
+        public IActionResult EditUploadImages(EditBrowseImage editBrowseImage)
+        {
+            int productId = Convert.ToInt32(TempData["ProductId"]);
+            var product = _productRepo.GetProductMasterById(productId);
+
+            var imageUpload = _imageRepo.UpdateImages(editBrowseImage, product);
+            return RedirectToAction("EditStockInfo");
+        }
+
+        [HttpGet]
+        public IActionResult EditStockInfo()
+        {
+            int productId = Convert.ToInt32(TempData["ProductId"]);
+            var product = _productRepo.GetProductMasterById(productId);
+            var stock = _productRepo.GetStockInfoByProdcutId(productId);
+
+            ViewBag.ProductId = productId;
+            ViewBag.ProductName = Convert.ToString(product.Product_Name);
+
+            return View(stock);
+        }
+
+        [HttpPost]
+        public IActionResult EditStockInfo(StockInformation stockInformation)
+        {
+            int productId = Convert.ToInt32(TempData["ProductId"]);
+            stockInformation.ProductId = productId;
+            var product = _productRepo.UpdateProductStockInfo(stockInformation);
+
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        [Route("Product/DeleteConfirm/{productId:int}")]
+        public IActionResult DeleteConfirm(int productId)
+        {
+            var productList = _productRepo.DeleteProductByProductId(productId);
+            return RedirectToAction("Index");
+        }
     }
 
 }

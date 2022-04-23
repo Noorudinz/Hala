@@ -13,7 +13,10 @@ namespace AdminLTE.MVC.Repository
         AddProductNameResponse AddProduct(AddProductName productAdd);
         AddProductNameResponse UpdateProduct(EditProductMaster productUpdate);
         ProductMaster GetProductMasterById(int productId);
+        StockInformation GetStockInfoByProdcutId(int productId);
         AddProductNameResponse AddProductStockInfo(StockInformation stockInformation);
+        AddProductNameResponse UpdateProductStockInfo(StockInformation stockInformation);
+        List<ProductList> DeleteProductByProductId(int productId);
 
     }
 }
