@@ -214,6 +214,30 @@ namespace AdminLTE.MVC.Implementation
             return  _context.Product.Where(a => a.Product_Id == productId).FirstOrDefault();
         }
 
+        public StockInformation GetStockInfoByProdcutId(int productId)
+        {
+            var product = _context.Product.Where(a => a.Product_Id == productId).FirstOrDefault();
+
+            var stock = _context.Stocks.Where(a => a.Product_Id == productId && a.StockId == product.StockId).FirstOrDefault();
+            var description = _context.Description.Where(a => a.Product_Id == productId && a.DescId == product.DescId).FirstOrDefault();
+            var sepecification = _context.Sepcification.Where(a => a.Product_Id == productId && a.SpecId == product.SpecId).FirstOrDefault();
+
+            var stockInfo = new StockInformation();
+
+            stockInfo.ProductId = product.Product_Id;
+            stockInfo.AvailStock = stock == null ? 0 : stock.Availablity; 
+            stockInfo.Price = stock == null ? 0 : stock.Price;
+            stockInfo.Description = description == null? string.Empty : description.Description_Content;
+            stockInfo.Weight = sepecification == null ? string.Empty : sepecification.Weight;
+            stockInfo.Dimensions = sepecification == null ? string.Empty : sepecification.Dimensions;
+            stockInfo.Size = sepecification == null ? string.Empty : sepecification.Size;
+            stockInfo.Color = sepecification == null ? string.Empty : sepecification.Color;
+            stockInfo.Guarantee = sepecification == null ? string.Empty : sepecification.Guarantee;
+
+            return stockInfo;
+
+        }
+
         public AddProductNameResponse UpdateProduct(EditProductMaster productUpdate)
         {
             try
@@ -272,6 +296,119 @@ namespace AdminLTE.MVC.Implementation
                     Message = ex.ToString()
                 });
             }
+        }
+
+        public AddProductNameResponse UpdateProductStockInfo(StockInformation stockInformation)
+        {
+            try
+            {
+                var product = GetProductMasterById(stockInformation.ProductId);
+                if (stockInformation != null)
+                {
+                    var stocks = _context.Stocks.Where(a => a.Product_Id == product.Product_Id).FirstOrDefault();
+                    stocks.Product_Id = product.Product_Id;
+                    stocks.Availablity = stockInformation.AvailStock;
+                    stocks.Price = stockInformation.Price;
+                    stocks.IsActive = true;
+                    stocks.UpdatedOn = DateTime.Now;
+
+                    _context.SaveChanges();
+
+                    product.StockId = stocks.StockId;
+
+                    var description = _context.Description.Where(a => a.Product_Id == product.Product_Id).FirstOrDefault();
+                    description.Product_Id = product.Product_Id;
+                    description.Description_Content = stockInformation.Description;
+                    description.IsActive = true;
+                    description.UpdatedOn = DateTime.Now;
+
+                    _context.SaveChanges();
+
+                    product.DescId = description.DescId;
+
+                    var specification = _context.Sepcification.Where(a => a.Product_Id == product.Product_Id).FirstOrDefault();
+                    specification.Product_Id = product.Product_Id;
+                    specification.Weight = stockInformation.Weight;
+                    specification.Dimensions = stockInformation.Dimensions;
+                    specification.Size = stockInformation.Size;
+                    specification.Color = stockInformation.Color;
+                    specification.Guarantee = stockInformation.Guarantee;
+                    specification.IsActive = true;
+                    specification.UpdatedOn = DateTime.Now;
+
+                    _context.SaveChanges();
+
+                    product.SpecId = specification.SpecId;
+
+                    product.UpdatedOn = DateTime.Now;
+                    _context.SaveChanges();
+                }
+
+                bool isImageExist = _context.Images.Where(s => s.Product_Id == product.Product_Id).Select(p => p.IsActive).Any();
+                bool isDescriptionExist = _context.Description.Where(s => s.Product_Id == product.Product_Id).Select(p => p.IsActive).Any();
+                bool isStockExist = _context.Stocks.Where(s => s.Product_Id == product.Product_Id).Select(p => p.IsActive).Any();
+                bool isSpecExist = _context.Sepcification.Where(s => s.Product_Id == product.Product_Id).Select(p => p.IsActive).Any();
+
+                if (isImageExist && isDescriptionExist && isStockExist && isSpecExist)
+                {
+                    var productActivation = GetProductMasterById(stockInformation.ProductId);
+                    productActivation.IsActive = true;
+                    product.UpdatedOn = DateTime.Now;
+                    _context.SaveChanges();
+
+
+                    return (new AddProductNameResponse()
+                    {
+                        ProductId = product.Product_Id,
+                        Status = "Success",
+                        Message = "Product Activated Successfully !",
+                    });
+
+                }
+
+                return (new AddProductNameResponse()
+                {
+                    ProductId = product.Product_Id,
+                    Status = "Information",
+                    Message = "Product Added but Inactive !",
+                });
+            }
+            catch (Exception ex)
+            {
+                return (new AddProductNameResponse()
+                {
+                    ProductId = 0,
+                    Status = "Failure",
+                    Message = ex.ToString()
+                });
+            }
+        }
+
+        public List<ProductList> DeleteProductByProductId(int productId)
+        {
+            var prodMaster = _context.Product.Where(a => a.Product_Id == productId).FirstOrDefault();
+
+            prodMaster.IsActive = false;
+            _context.SaveChanges();
+
+            var product = (from p in _context.Product
+                           join ct in _context.Category
+                           on p.CategoryId equals ct.CategoryId
+                           join sct in _context.SubCategory
+                           on p.SubCategoryId equals sct.SubCategoryId
+                           join b in _context.Brand
+                           on p.BrandId equals b.BrandId
+                           where (p.IsActive == true)
+                           select new ProductList
+                           {
+                               Product_Id = p.Product_Id,
+                               BrandName = b.BrandName,
+                               CategoryName = ct.Category_Name,
+                               SubCategoryName = sct.SubCategory_Name,
+                               Product_Name = p.Product_Name
+                           }).ToList();
+
+            return product;
         }
     }
 }

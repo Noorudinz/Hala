@@ -16,11 +16,6 @@ namespace AdminLTE.MVC.Controllers
             _categoryRepo = context;
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
-
         [HttpGet]
         public List<Category> GetAllCategorys()
         {
@@ -29,5 +24,35 @@ namespace AdminLTE.MVC.Controllers
                 .ToList();
             return categoryList;
         }
+
+        public IActionResult Index()
+        {
+            var categorys = _categoryRepo.GetAllCategorys();
+            ViewBag.DataSource = categorys;
+            return View();
+
+        }
+
+        [HttpPost]
+        public IActionResult AddOrEditCategory(Category category)
+        {
+            var categoryMaster = _categoryRepo.AddOrEditCategory(category);
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public JsonResult EditCategory(int categoryId)
+        {
+            var category = _categoryRepo.GetCategoryById(categoryId);         
+            return Json(category);
+        }
+
+        [HttpGet]
+        public IActionResult DeleteCategory(int categoryId)
+        {
+             _categoryRepo.DeleteCategory(categoryId);
+            return RedirectToAction("Index");
+        }
+
     }
 }

@@ -9,7 +9,7 @@
 @{
     List<object> commands = new List<object>();
     commands.Add(new { type = "edit", buttonOption = new { iconCss = "e-icons e-edit", cssClass = "e-flat" } });
-    commands.Add(new { type = "delete", buttonOption = new { iconCss = "e-icons e-delete", cssClass = "e-flat" } });
+   
 }
 
 <a href="/Product/Index" class="btn btn-default"> Active List</a>
@@ -25,24 +25,19 @@
     </e-grid-columns>
 </ejs-grid>
 
-<script>
+
+><script>
     function commandClick(args) {
-        //console.log(args.commandColumn.type);
-        //alert(JSON.stringify(args.rowData));  // display row data
+
         if (args.commandColumn.type === 'edit') {
-            alert('edit');
+            window.location.href = "/Product/EditPrimary/" + args.rowData.Product_Id;
         }
 
         if (args.commandColumn.type === 'delete') {
-            alert('delete');
+            $('#productId').val(args.rowData.Product_Id);
+            $('#productName').text(args.rowData.Product_Name);
+            $('#modal-small').modal('show');
         }
     }
-
-    var isAddable = true;
-
-    function btnClick(args) {
-        //window.location.href = "/Product/AddPrimary";
-    }
-
 
 </script>

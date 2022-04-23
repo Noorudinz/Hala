@@ -19,8 +19,4 @@
     <PackageReference Include="Syncfusion.EJ2.AspNet.Core" Version="19.4.0.56" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\ProductImages\" />
-  </ItemGroup>
-
 </Project>

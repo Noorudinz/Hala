@@ -34,4 +34,12 @@ namespace AdminLTE.MVC.Models
         public ProductMaster ProductMaster { get; set; }
         public BrowseImage BrowseImage { get; set; }
     }
+
+    public class EditBrowseImage: Images
+    {
+        public IFormFile Main_URL_File { get; set; }
+        public IFormFile URL_1_File { get; set; }
+        public IFormFile URL_2_File { get; set; }
+        public IFormFile URL_3_File { get; set; }
+    }
 }

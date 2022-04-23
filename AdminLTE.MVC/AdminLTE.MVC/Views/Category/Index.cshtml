@@ -1,0 +1,120 @@
+﻿@model AdminLTE.MVC.Models.Category
+
+@{
+    Layout = "~/Views/Shared/AdminLTE/_Layout.cshtml";
+    List<object> commands = new List<object>();
+    commands.Add(new { type = "edit", buttonOption = new { iconCss = "e-icons e-edit", cssClass = "e-flat" } });
+    commands.Add(new { type = "delete", buttonOption = new { iconCss = "e-icons e-delete", cssClass = "e-flat" } });
+}
+
+
+
+<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#modal-default">Add Category</button>
+
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="273" commandClick="commandClick">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Batch"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="CategoryId" isPrimaryKey="true" visible="false"></e-grid-column>
+        <e-grid-column field="Category_Name" headerText="Category Name" width="150"></e-grid-column>
+        <e-grid-column headerText="Manage Records" width="150" commands="commands"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<div class="modal fade show" id="modal-default" aria-modal="true" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Add Category</h4>               
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form asp-controller="Category" asp-action="AddOrEditCategory">
+                    <input type="hidden" asp-for="CategoryId"  />
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Category</label>
+                            <input type="text" asp-for="Category_Name" class="form-control" placeholder="Category">
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>            
+        </div>
+    </div>
+</div>
+
+<div class="modal fade show" id="modal-small" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Are you sure to delete?</h4>
+                <input type="hidden" id="categoryId" value="" />
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p id="categoryName"></p>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" onclick="deleteConfirm();" class="btn btn-danger">Delete</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    function commandClick(args) {
+
+        if (args.commandColumn.type === 'edit') {
+
+            //Get Category by id
+            $.ajax({
+                type: "GET",
+                url: "@Url.Action("EditCategory", "Category")",
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                data: { 'categoryId': args.rowData.CategoryId },
+                success: function (response) {
+                    if (response != null) {
+                        console.log(response);
+                        $('#CategoryId').val(response.categoryId);
+                        $('#Category_Name').val(response.category_Name);
+                        $('#modal-default').modal('show');
+                    }
+                },
+                error: function (e) {
+                    console.log(e);
+                }
+            });
+
+        }
+
+        if (args.commandColumn.type === 'delete') {
+           $('#categoryId').val(args.rowData.CategoryId);
+           $('#categoryName').text(args.rowData.Category_Name);
+           $('#modal-small').modal('show');
+        }
+    }
+
+
+    function deleteConfirm() {
+        var categoryId = $('#categoryId').val();
+
+         $.ajax({
+            type: "GET",
+            url: "@Url.Action("DeleteCategory", "Category")",
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+             data: { 'categoryId': categoryId }
+         });
+    }
+
+</script>
