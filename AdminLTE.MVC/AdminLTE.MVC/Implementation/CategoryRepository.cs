@@ -17,19 +17,41 @@ namespace AdminLTE.MVC.Implementation
             _context = appDbContext;
         }
 
-        public Category AddCategory(Category category)
+        public Category AddOrEditCategory(Category category)
         {
-            throw new NotImplementedException();
+            var categoryMaster = new Category();
+            if(category.CategoryId > 0)
+            {
+                categoryMaster = _context.Category.Where(a => a.CategoryId == category.CategoryId).FirstOrDefault();
+                categoryMaster.Category_Name = category.Category_Name;
+                categoryMaster.IsActive = true;
+                categoryMaster.UpdatedOn = DateTime.Now;
+                _context.SaveChanges();
+
+                return categoryMaster;
+            }
+
+            categoryMaster.Category_Name = category.Category_Name;
+            categoryMaster.IsActive = true;
+            categoryMaster.CreatedOn = DateTime.Now;
+
+            _context.Category.Add(categoryMaster);
+            _context.SaveChanges();
+
+            return categoryMaster;
         }
 
         public void DeleteCategory(int categoryId)
         {
-            throw new NotImplementedException();
+            var category = _context.Category.Where(a => a.CategoryId == categoryId).FirstOrDefault();
+            category.IsActive = false;
+            category.UpdatedOn = DateTime.Now;
+            _context.SaveChanges();
         }
 
         public List<Category> GetAllCategorys()
         {
-            return _context.Category.ToList();
+            return _context.Category.Where(a => a.IsActive == true).ToList();
         }
 
         public Category GetCategoryById(int categoryId)

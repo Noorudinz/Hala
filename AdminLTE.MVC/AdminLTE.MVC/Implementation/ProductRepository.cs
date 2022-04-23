@@ -225,14 +225,14 @@ namespace AdminLTE.MVC.Implementation
             var stockInfo = new StockInformation();
 
             stockInfo.ProductId = product.Product_Id;
-            stockInfo.AvailStock = stock.Availablity;
-            stockInfo.Price = stock.Price;
-            stockInfo.Description = description.Description_Content;
-            stockInfo.Weight = sepecification.Weight;
-            stockInfo.Dimensions = sepecification.Dimensions;
-            stockInfo.Size = sepecification.Size;
-            stockInfo.Color = sepecification.Color;
-            stockInfo.Guarantee = sepecification.Guarantee;
+            stockInfo.AvailStock = stock == null ? 0 : stock.Availablity; 
+            stockInfo.Price = stock == null ? 0 : stock.Price;
+            stockInfo.Description = description == null? string.Empty : description.Description_Content;
+            stockInfo.Weight = sepecification == null ? string.Empty : sepecification.Weight;
+            stockInfo.Dimensions = sepecification == null ? string.Empty : sepecification.Dimensions;
+            stockInfo.Size = sepecification == null ? string.Empty : sepecification.Size;
+            stockInfo.Color = sepecification == null ? string.Empty : sepecification.Color;
+            stockInfo.Guarantee = sepecification == null ? string.Empty : sepecification.Guarantee;
 
             return stockInfo;
 

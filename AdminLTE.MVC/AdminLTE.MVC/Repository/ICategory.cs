@@ -10,7 +10,7 @@ namespace AdminLTE.MVC.Repository
     {
         List<Category> GetAllCategorys();
         Category GetCategoryById(int categoryId);
-        Category AddCategory(Category category);
+        Category AddOrEditCategory(Category category);
         Category UpdateCategory(Category category);
         void DeleteCategory(int categoryId);
     }
