@@ -109,14 +109,14 @@
 
          $.ajax({
             type: "GET",
-            url: "@Url.Action("DeleteB", "Category")",
+            url: "@Url.Action("DeleteBrand", "Brand")",
             contentType: 'application/json; charset=utf-8',
             dataType: 'json',
-             data: { 'categoryId': categoryId },
+             data: { 'brandId': brandId },
              success: function (response) {
                  $('#modal-small').modal('hide');
                  if (response.isUpdated) {
-                     window.location.href = '/Category/Index/';
+                     window.location.href = '/Brand/Index/';
                  }
              }
          });

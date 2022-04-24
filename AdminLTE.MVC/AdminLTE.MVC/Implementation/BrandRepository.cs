@@ -41,9 +41,27 @@ namespace AdminLTE.MVC.Implementation
             return brandMaster;
         }
 
-        public void DeleteBrand(int brandId)
+        public BrandResponse DeleteBrand(int brandId)
         {
-            throw new NotImplementedException();
+            var brand = _context.Brand.Where(a => a.BrandId == brandId).FirstOrDefault();
+            if (brand != null && brand.BrandId > 0)
+            {
+                brand.IsActive = false;
+                brand.UpdatedOn = DateTime.Now;
+                _context.SaveChanges();
+
+                return new BrandResponse
+                {
+                    IsUpdated = true,
+                    Message = "Deleted Brand Succesfully"
+                };
+            }
+
+            return new BrandResponse
+            {
+                IsUpdated = false,
+                Message = "Deleted Brand Failed"
+            };
         }
 
         public IEnumerable<Brand> GetAllBrands()
@@ -60,5 +78,6 @@ namespace AdminLTE.MVC.Implementation
         {
             throw new NotImplementedException();
         }
+
     }
 }

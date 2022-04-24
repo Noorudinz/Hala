@@ -45,5 +45,13 @@ namespace AdminLTE.MVC.Controllers
             var brandMaster = _brandRepo.GetBrandById(brandId);
             return Json(brandMaster);
         }
+
+
+        [HttpGet]
+        public JsonResult DeleteBrand(int brandId)
+        {
+            var response = _brandRepo.DeleteBrand(brandId);
+            return Json(response);
+        }
     }
 }

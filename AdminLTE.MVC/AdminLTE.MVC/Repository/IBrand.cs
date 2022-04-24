@@ -12,6 +12,6 @@ namespace AdminLTE.MVC.Repository
         Brand GetBrandById(int brandId);
         Brand AddOrEditCategory(Brand brand);
         Brand UpdateBrand(Brand brand);
-        void DeleteBrand(int brandId);
+        BrandResponse DeleteBrand(int brandId);
     }
 }

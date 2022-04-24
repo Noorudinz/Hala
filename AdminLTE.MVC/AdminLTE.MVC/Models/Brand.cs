@@ -15,4 +15,10 @@ namespace AdminLTE.MVC.Models
         public DateTime? CreatedOn { get; set; }
         public DateTime? UpdatedOn { get; set; }
     }
+
+    public class BrandResponse
+    {
+        public bool IsUpdated { get; set; }
+        public string Message { get; set; }
+    }
 }
