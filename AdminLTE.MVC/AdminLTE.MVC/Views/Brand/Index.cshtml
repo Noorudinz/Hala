@@ -1,0 +1,125 @@
+﻿@model AdminLTE.MVC.Models.Brand
+
+@{
+    Layout = "~/Views/Shared/AdminLTE/_Layout.cshtml";
+    List<object> commands = new List<object>();
+    commands.Add(new { type = "edit", buttonOption = new { iconCss = "e-icons e-edit", cssClass = "e-flat" } });
+    commands.Add(new { type = "delete", buttonOption = new { iconCss = "e-icons e-delete", cssClass = "e-flat" } });
+}
+
+
+
+<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#modal-default">Add Brand</button>
+
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="273" commandClick="commandClick">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Batch"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="BrandId" isPrimaryKey="true" visible="false"></e-grid-column>
+        <e-grid-column field="BrandName" headerText="Brand Name" width="150"></e-grid-column>
+        <e-grid-column headerText="Manage Records" width="150" commands="commands"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<div class="modal fade show" id="modal-default" aria-modal="true" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Add Brand</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form asp-controller="Brand" asp-action="AddOrEditBrand">
+                    <input type="hidden" asp-for="BrandId" />
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Category</label>
+                            <input type="text" asp-for="BrandName" class="form-control" placeholder="Category">
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade show" id="modal-small" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Are you sure to delete?</h4>
+                <input type="hidden" id="brandId" value="" />
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p id="brandName"></p>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" onclick="deleteConfirm();" class="btn btn-danger">Delete</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    function commandClick(args) {
+
+        if (args.commandColumn.type === 'edit') {
+
+            //Get Category by id
+            $.ajax({
+                type: "GET",
+                url: "@Url.Action("EditBrand", "Brand")",
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                data: { 'brandId': args.rowData.BrandId },
+                success: function (response) {
+                    if (response != null) {
+                        $('#BrandId').val(response.brandId);
+                        $('#BrandName').val(response.brandName);
+                        $('#modal-default').modal('show');
+                    }
+                },
+                error: function (e) {
+                    console.log(e);
+                }
+            });
+
+        }
+
+        if (args.commandColumn.type === 'delete') {
+            $('#brandId').val(args.rowData.BrandId);
+            $('#brandName').text(args.rowData.BrandName);
+           $('#modal-small').modal('show');
+        }
+    }
+
+
+    function deleteConfirm() {
+        var brandId = $('#brandId').val();
+
+         $.ajax({
+            type: "GET",
+            url: "@Url.Action("DeleteBrand", "Brand")",
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+             data: { 'brandId': brandId },
+             success: function (response) {
+                 $('#modal-small').modal('hide');
+                 if (response.isUpdated) {
+                     window.location.href = '/Brand/Index/';
+                 }
+             }
+         });
+    }
+
+</script>

@@ -14,12 +14,7 @@ namespace AdminLTE.MVC.Controllers
         public BrandController(IBrand context)
         {
             _brandRepo = context;
-        }
-        public IActionResult Index()
-        {
-            return View();
-        }
-
+        }      
 
         [HttpGet]
         public List<Brand> GetAllBrands()
@@ -28,6 +23,35 @@ namespace AdminLTE.MVC.Controllers
                 .Select(s => new Brand { BrandId = s.BrandId, BrandName = s.BrandName })
                 .ToList();
             return brandList;
+        }
+
+        public IActionResult Index()
+        {
+            var brands = _brandRepo.GetAllBrands();
+            ViewBag.DataSource = brands;
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult AddOrEditBrand(Brand brand)
+        {
+            var brandMaster = _brandRepo.AddOrEditCategory(brand);
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public JsonResult EditBrand(int brandId)
+        {
+            var brandMaster = _brandRepo.GetBrandById(brandId);
+            return Json(brandMaster);
+        }
+
+
+        [HttpGet]
+        public JsonResult DeleteBrand(int brandId)
+        {
+            var response = _brandRepo.DeleteBrand(brandId);
+            return Json(response);
         }
     }
 }
