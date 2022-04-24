@@ -48,10 +48,10 @@ namespace AdminLTE.MVC.Controllers
         }
 
         [HttpGet]
-        public IActionResult DeleteCategory(int categoryId)
+        public JsonResult DeleteCategory(int categoryId)
         {
-             _categoryRepo.DeleteCategory(categoryId);
-            return RedirectToAction("Index");
+            var response = _categoryRepo.DeleteCategory(categoryId);
+            return Json(response);
         }
 
     }

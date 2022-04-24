@@ -113,7 +113,13 @@
             url: "@Url.Action("DeleteCategory", "Category")",
             contentType: 'application/json; charset=utf-8',
             dataType: 'json',
-             data: { 'categoryId': categoryId }
+             data: { 'categoryId': categoryId },
+             success: function (response) {
+                 $('#modal-small').modal('hide');
+                 if (response.isUpdated) {
+                     window.location.href = '/Category/Index/';
+                 }
+             }
          });
     }
 

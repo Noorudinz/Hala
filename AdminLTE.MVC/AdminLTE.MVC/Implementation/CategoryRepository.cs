@@ -41,12 +41,28 @@ namespace AdminLTE.MVC.Implementation
             return categoryMaster;
         }
 
-        public void DeleteCategory(int categoryId)
+        public CategoryResponse DeleteCategory(int categoryId)
         {
             var category = _context.Category.Where(a => a.CategoryId == categoryId).FirstOrDefault();
-            category.IsActive = false;
-            category.UpdatedOn = DateTime.Now;
-            _context.SaveChanges();
+            if(category != null && category.CategoryId > 0)
+            {
+                category.IsActive = false;
+                category.UpdatedOn = DateTime.Now;
+                _context.SaveChanges();
+
+                return new CategoryResponse
+                {
+                    IsUpdated = true,
+                    Message = "Deleted Succesfully"
+                };
+            }
+
+            return new CategoryResponse
+            {
+                IsUpdated = false,
+                Message = "Deleted Failed"
+            };
+
         }
 
         public List<Category> GetAllCategorys()
