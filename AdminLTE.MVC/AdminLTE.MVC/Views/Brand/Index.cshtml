@@ -30,7 +30,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form asp-controller="Category" asp-action="AddOrEditCategory">
+                <form asp-controller="Brand" asp-action="AddOrEditBrand">
                     <input type="hidden" asp-for="BrandId" />
                     <div class="card-body">
                         <div class="form-group">
@@ -78,15 +78,14 @@
             //Get Category by id
             $.ajax({
                 type: "GET",
-                url: "@Url.Action("EditCategory", "Category")",
+                url: "@Url.Action("EditBrand", "Brand")",
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'json',
-                data: { 'categoryId': args.rowData.CategoryId },
+                data: { 'brandId': args.rowData.BrandId },
                 success: function (response) {
                     if (response != null) {
-                        console.log(response);
-                        $('#CategoryId').val(response.categoryId);
-                        $('#Category_Name').val(response.category_Name);
+                        $('#BrandId').val(response.brandId);
+                        $('#BrandName').val(response.brandName);
                         $('#modal-default').modal('show');
                     }
                 },
@@ -98,19 +97,19 @@
         }
 
         if (args.commandColumn.type === 'delete') {
-           $('#categoryId').val(args.rowData.CategoryId);
-           $('#categoryName').text(args.rowData.Category_Name);
+            $('#brandId').val(args.rowData.BrandId);
+            $('#brandName').text(args.rowData.BrandName);
            $('#modal-small').modal('show');
         }
     }
 
 
     function deleteConfirm() {
-        var categoryId = $('#categoryId').val();
+        var brandId = $('#brandId').val();
 
          $.ajax({
             type: "GET",
-            url: "@Url.Action("DeleteCategory", "Category")",
+            url: "@Url.Action("DeleteB", "Category")",
             contentType: 'application/json; charset=utf-8',
             dataType: 'json',
              data: { 'categoryId': categoryId },

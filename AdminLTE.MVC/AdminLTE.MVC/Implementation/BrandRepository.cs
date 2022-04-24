@@ -17,9 +17,28 @@ namespace AdminLTE.MVC.Implementation
             _context = appDbContext;
         }
 
-        public Brand AddBrand(Brand brand)
+        public Brand AddOrEditCategory(Brand brand)
         {
-            throw new NotImplementedException();
+            var brandMaster = new Brand();
+            if (brand.BrandId > 0)
+            {
+                brandMaster = _context.Brand.Where(a => a.BrandId == brand.BrandId).FirstOrDefault();
+                brandMaster.BrandName = brand.BrandName;
+                brandMaster.IsActive = true;
+                brandMaster.UpdatedOn = DateTime.Now;
+                _context.SaveChanges();
+
+                return brandMaster;
+            }
+
+            brandMaster.BrandName = brand.BrandName;
+            brandMaster.IsActive = true;
+            brandMaster.CreatedOn = DateTime.Now;
+
+            _context.Brand.Add(brandMaster);
+            _context.SaveChanges();
+
+            return brandMaster;
         }
 
         public void DeleteBrand(int brandId)
@@ -34,7 +53,7 @@ namespace AdminLTE.MVC.Implementation
 
         public Brand GetBrandById(int brandId)
         {
-            throw new NotImplementedException();
+            return _context.Brand.Where(w => w.BrandId == brandId).FirstOrDefault();
         }
 
         public Brand UpdateBrand(Brand brand)

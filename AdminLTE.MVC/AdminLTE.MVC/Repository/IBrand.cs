@@ -10,7 +10,7 @@ namespace AdminLTE.MVC.Repository
     {
         IEnumerable<Brand> GetAllBrands();
         Brand GetBrandById(int brandId);
-        Brand AddBrand(Brand brand);
+        Brand AddOrEditCategory(Brand brand);
         Brand UpdateBrand(Brand brand);
         void DeleteBrand(int brandId);
     }

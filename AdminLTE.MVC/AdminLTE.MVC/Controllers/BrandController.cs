@@ -31,5 +31,19 @@ namespace AdminLTE.MVC.Controllers
             ViewBag.DataSource = brands;
             return View();
         }
+
+        [HttpPost]
+        public IActionResult AddOrEditBrand(Brand brand)
+        {
+            var brandMaster = _brandRepo.AddOrEditCategory(brand);
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public JsonResult EditBrand(int brandId)
+        {
+            var brandMaster = _brandRepo.GetBrandById(brandId);
+            return Json(brandMaster);
+        }
     }
 }
