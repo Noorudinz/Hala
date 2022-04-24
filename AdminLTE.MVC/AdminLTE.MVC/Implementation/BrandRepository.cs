@@ -29,7 +29,7 @@ namespace AdminLTE.MVC.Implementation
 
         public IEnumerable<Brand> GetAllBrands()
         {
-            return _context.Brand.ToList();
+            return _context.Brand.Where(a => a.IsActive == true).ToList();
         }
 
         public Brand GetBrandById(int brandId)
