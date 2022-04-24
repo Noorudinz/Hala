@@ -12,6 +12,6 @@ namespace AdminLTE.MVC.Repository
         Category GetCategoryById(int categoryId);
         Category AddOrEditCategory(Category category);
         Category UpdateCategory(Category category);
-        void DeleteCategory(int categoryId);
+        CategoryResponse DeleteCategory(int categoryId);
     }
 }
