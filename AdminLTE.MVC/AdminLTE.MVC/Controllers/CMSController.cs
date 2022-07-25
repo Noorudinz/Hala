@@ -1,4 +1,5 @@
 ﻿using AdminLTE.MVC.Data;
+using AdminLTE.MVC.Repository;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -10,9 +11,11 @@ namespace AdminLTE.MVC.Controllers
     public class CMSController : Controller
     {
         private ApplicationDbContext _context;
-        public CMSController(ApplicationDbContext context)
+        private readonly IProduct _productRepo;
+        public CMSController(ApplicationDbContext context, IProduct productRepo)
         {            
-            _context = context;           
+            _context = context;
+            _productRepo = productRepo;
 
         }
         public IActionResult LoadData()
@@ -67,6 +70,12 @@ namespace AdminLTE.MVC.Controllers
 
         public IActionResult HomeBanner()
         {
+            var cmsDetails = _productRepo.GetAllActiveProductList();
+
+            //(from tempcontent in _context.Contents
+            //              select tempcontent);
+            ViewBag.DataSource = cmsDetails;
+
             //var banner = _context.Contents.SingleOrDefault(x => x.ContentType == "HOME_MAIN_BANNER" && x.IsActive == true);
             //return View(banner);
             return View();
@@ -77,6 +86,8 @@ namespace AdminLTE.MVC.Controllers
             var content = _context.Contents.SingleOrDefault(x => x.ContentId == contentId && x.IsActive == true);
             return PartialView("_EditContent", content);
         }
+
+    
 
     }
 }

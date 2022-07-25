@@ -2,7 +2,7 @@
 
 @{
     Layout = "~/Views/Shared/AdminLTE/_Layout.cshtml";
- }
+}
 
 <style>
     .status {
@@ -42,7 +42,27 @@
     <!-- /.box-header -->
     <div class="box-body">
 
-        <div style="width:90%; margin:0 auto" class="tablecontainer">
+        @{
+            List<object> commands = new List<object>();
+            commands.Add(new { type = "edit", buttonOption = new { iconCss = "e-icons e-edit", cssClass = "e-flat" } });
+            commands.Add(new { type = "delete", buttonOption = new { iconCss = "e-icons e-delete", cssClass = "e-flat" } });
+        }
+
+        <button class="btn btn-outline-primary" onclick="btnClick(event)">Add Product</button>
+        <a href="/Product/InactiveList" class="float-sm-right btn btn-default"> Inactive List</a>
+        <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="273" commandClick="commandClick">
+            <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Batch"></e-grid-editSettings>
+            <e-grid-columns>
+                <e-grid-column field="Product_Id" isPrimaryKey="true" visible="false"></e-grid-column>
+                <e-grid-column field="BrandName" headerText="Brand Name" width="120"></e-grid-column>
+                <e-grid-column field="CategoryName" headerText="Category Name" width="120"></e-grid-column>
+                <e-grid-column field="SubCategoryName" headerText="SubCategory Name" width="150"></e-grid-column>
+                <e-grid-column field="Product_Name" headerText="Product Name" width="150"></e-grid-column>
+                <e-grid-column headerText="Manage Records" width="150" commands="commands"></e-grid-column>
+            </e-grid-columns>
+        </ejs-grid>
+
+        @*<div style="width:90%; margin:0 auto" class="tablecontainer">
             <a class="popup btn btn-primary" href="#" style="margin-bottom:20px; margin-top:20px;" onclick="AddEditCustomer(0)">Add Customer</a>
 
             <div class="container">
@@ -63,12 +83,10 @@
                     </table>
                 </div>
             </div>
-        </div>
+        </div>*@
         <!-- /.box-body -->
-    </div>
-
-
-    @*<div class="modal fade" id="myModal1">
+        <!--</div>-->
+        @*<div class="modal fade" id="myModal1">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -82,42 +100,42 @@
             </div>
         </div>*@
 
-    <div class="modal fade" id="myModal2">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title">Edit Content</h3>
-                    <a href="#" class="close" data-dismiss="modal">&times;</a>
-                </div>
-                <div class="modal-body" id="myModalBodyDiv2">
-                    <partial name="_EditContent" />
+        <div class="modal fade" id="myModal2">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Edit Content</h3>
+                        <a href="#" class="close" data-dismiss="modal">&times;</a>
+                    </div>
+                    <div class="modal-body" id="myModalBodyDiv2">
+                        <partial name="_EditContent" />
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Edit Content</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Edit Content</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="myModalBodyDiv2">
+                        <partial name="_EditContent" />
+                    </div>
+                    @*<div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>*@
                 </div>
-                <div class="modal-body" id="myModalBodyDiv2">
-                    <partial name="_EditContent" />
-                </div>
-                @*<div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>*@
             </div>
         </div>
-    </div>
 
-</div>
+    </div>
 
 
 @*<div id="summernote"><p>Hello Summernote</p></div>*@
