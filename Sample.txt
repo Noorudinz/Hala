@@ -1,1 +1,18 @@
-This is sample text for adding on git hala project
+1. fetch home main banner from content
+2. fetch 3 main home banner from content one by one
+3. on sale => last 6 updated or new products
+
+
+Product:
+1. category_name => (catid, category_name)
+2. sub_category_name => (sub_cat_id, catid, sub_cat_name)
+10. color => (color_id, color_name)
+3. Product name 
+4. Prod short desc 
+5. sku no
+6. prod no
+7. images 5 urls => (img_id, prod_no, main_url, url1, url2, url3)
+9. stock avail => (stock_id, prod_no, stock_avail, price)
+11. prod long desc => (desc_id, prod_no, long_desc_content)
+12. specification => (spec_id, prod_no, ......)
+13. reviews => (review_id, prod_no, review_post, cust_id, cust_name, stars_count)

@@ -1,338 +1,169 @@
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\appsettings.Development.json
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\appsettings.json
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\AdminLTE.StaticWebAssets.xml
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\AdminLTE.exe
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\AdminLTE.deps.json
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\AdminLTE.runtimeconfig.json
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\AdminLTE.runtimeconfig.dev.json
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\AdminLTE.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\AdminLTE.pdb
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\AdminLTE.Views.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\AdminLTE.Views.pdb
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.AssemblyInfoInputs.cache
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.AssemblyInfo.cs
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.csproj.CoreCompileInputs.cache
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MvcApplicationPartsAssemblyInfo.cs
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MvcApplicationPartsAssemblyInfo.cache
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.RazorAssemblyInfo.cache
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.RazorAssemblyInfo.cs
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.TagHelpers.input.cache
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.TagHelpers.output.cache
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.RazorCoreGenerate.cache
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AdminLTE\_Footer.cshtml.g.cs
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AdminLTE\_Layout.cshtml.g.cs
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AdminLTE\_MainNavigation.cshtml.g.cs
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AdminLTE\_Scripts.cshtml.g.cs
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AdminLTE\_Styles.cshtml.g.cs
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AdminLTE\_TopNavigation.cshtml.g.cs
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.RazorTargetAssemblyInfo.cache
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.RazorTargetAssemblyInfo.cs
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.Views.pdb
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.csproj.CopyComplete
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\staticwebassets\AdminLTE.StaticWebAssets.Manifest.cache
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\staticwebassets\AdminLTE.StaticWebAssets.xml
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.dll
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.pdb
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.genruntimeconfig.cache
-E:\MY PROJECTS\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.csprojAssemblyReference.cache
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\appsettings.Development.json
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\appsettings.json
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\AdminLTE.StaticWebAssets.xml
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\AdminLTE.exe
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\AdminLTE.deps.json
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\AdminLTE.runtimeconfig.json
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\AdminLTE.runtimeconfig.dev.json
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\AdminLTE.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\AdminLTE.pdb
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\AdminLTE.Views.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\AdminLTE.Views.pdb
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.csproj.AssemblyReference.cache
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.AssemblyInfoInputs.cache
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.AssemblyInfo.cs
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.csproj.CoreCompileInputs.cache
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MvcApplicationPartsAssemblyInfo.cs
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MvcApplicationPartsAssemblyInfo.cache
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.RazorAssemblyInfo.cache
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.RazorAssemblyInfo.cs
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\staticwebassets\AdminLTE.StaticWebAssets.Manifest.cache
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\staticwebassets\AdminLTE.StaticWebAssets.xml
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\scopedcss\bundle\AdminLTE.styles.css
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.TagHelpers.input.cache
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.TagHelpers.output.cache
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.RazorCoreGenerate.cache
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AdminLTE\_Footer.cshtml.g.cs
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AdminLTE\_Layout.cshtml.g.cs
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AdminLTE\_MainNavigation.cshtml.g.cs
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AdminLTE\_Scripts.cshtml.g.cs
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AdminLTE\_Styles.cshtml.g.cs
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AdminLTE\_TopNavigation.cshtml.g.cs
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.RazorTargetAssemblyInfo.cache
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.RazorTargetAssemblyInfo.cs
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.Views.pdb
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.csproj.CopyComplete
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.dll
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.pdb
-D:\Softwares\NoorPractice\AdminLTE.MVC\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.genruntimeconfig.cache
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\AdminLTE.MVC.StaticWebAssets.xml
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\AdminLTE.MVC.exe
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\AdminLTE.MVC.deps.json
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\AdminLTE.MVC.runtimeconfig.json
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\AdminLTE.MVC.runtimeconfig.dev.json
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\AdminLTE.MVC.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\AdminLTE.MVC.pdb
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\AdminLTE.MVC.Views.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\AdminLTE.MVC.Views.pdb
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.csproj.AssemblyReference.cache
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.AssemblyInfoInputs.cache
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.AssemblyInfo.cs
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.csproj.CoreCompileInputs.cache
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.RazorAssemblyInfo.cache
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.RazorAssemblyInfo.cs
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\staticwebassets\AdminLTE.MVC.StaticWebAssets.Manifest.cache
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\staticwebassets\AdminLTE.MVC.StaticWebAssets.xml
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\scopedcss\bundle\AdminLTE.MVC.styles.css
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.TagHelpers.input.cache
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.TagHelpers.output.cache
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.RazorCoreGenerate.cache
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AdminLTE\_Footer.cshtml.g.cs
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AdminLTE\_Layout.cshtml.g.cs
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AdminLTE\_MainNavigation.cshtml.g.cs
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AdminLTE\_Scripts.cshtml.g.cs
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AdminLTE\_Styles.cshtml.g.cs
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AdminLTE\_TopNavigation.cshtml.g.cs
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.RazorTargetAssemblyInfo.cache
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.RazorTargetAssemblyInfo.cs
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.Views.pdb
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.csproj.CopyComplete
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.dll
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.pdb
+C:\Users\USER\Downloads\AdminLTE.MVC-master\AdminLTE.MVC-master\AdminLTE.MVC\obj\Debug\netcoreapp3.1\AdminLTE.MVC.genruntimeconfig.cache
