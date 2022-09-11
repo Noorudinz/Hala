@@ -740,7 +740,6 @@
     <script type="text/javascript" src="assets/js/Accounts/CustomerAccounts.js"></script>
     <script type="text/javascript" src="assets/js/toaster/notific.js"></script>
     <script type="text/javascript" src="assets/js/Content/ContentManagement.js"></script>
-    <script type="text/javascript" src="assets/js/Product/ProductManagement.js"></script>
 
     <!-- JS Plugins Init. -->
     <script>
