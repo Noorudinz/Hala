@@ -21,9 +21,31 @@ namespace Store
 
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+            string productID = Request.QueryString["productId"].ToString();
+            if (!string.IsNullOrEmpty(productID))
+                GetProductDetials(productID);
         }
 
+        public void GetProductDetials(string productID)
+        {
+            var service = CommonMethods.GetLogedInService();
+
+            var url = HALA.DTO.Constants
+                         .ProductURI.GetProductDetailsByProductId
+                         .Replace("{productId}", productID);
+
+            var productDetails = service.GetData<HALA.DTO.RequestResponseWrappers.ApiResponse
+                              <HALA.DTO.RequestResponseWrappers.ProductDetails>>(url);
+
+            if (productDetails.Result.IsTransactionDone)
+            {
+                cat.InnerText = productDetails.Result.CategoryName;
+                subcat.InnerText = productDetails.Result.SubCategoryName;
+                productName.InnerText = productDetails.Result.ProductName;
+            }
+
+            //return JsonConvert.SerializeObject(result);
+        }
         public class AddToCart
         {
             public decimal amt { get; set; }

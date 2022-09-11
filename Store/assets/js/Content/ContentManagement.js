@@ -18,21 +18,6 @@ $(document).ready(function () {
     //    }
     //});
 
-    //sample live api
-    //$.ajax({
-    //    type: "get",
-    //    url: "https://samplewebapihosting.azurewebsites.net/api/Buildings/GetBuildings",
-    //    data: '',
-    //    contenttype: 'application/json; charset=utf-8',
-    //    datatype: 'json',
-    //    success: function (response) {
-    //        console.log(response);
-    //    },
-    //    error: function () {
-    //        alert('error');
-    //    }
-    //});
-
     $.ajax({
         type: "get",
         url: rootURL + "api/content/FetchOnSales/ON_SALES_PRODUCT",
@@ -52,7 +37,7 @@ $(document).ready(function () {
                     '<div class="product-item__body pb-xl-2">' +
                     '<div class="mb-2"><a href="#" class="font-size-12 text-gray-5">' + prodList[i].category_Name +'</a></div>' +
                     '<h5 class="mb-1 product-item__title"><a href="#" class="text-blue font-weight-bold">' + prodList[i].product_Name +'</a></h5>' +
-                    '<div class="mb-2"> <a href="ProductDetail.aspx?product=' + prodList[i].product_Id +'" class="d-block text-center">' +
+                    '<div class="mb-2"> <a href="ProductDetail.aspx?productId=' + prodList[i].product_Id +'" class="d-block text-center">' +
                     '<img class="img-fluid" src="' + prodList[i].product_Image +'" alt="image description"></a></div>' +
                     '<div class="flex-center-between mb-1"> <div class="prodcut-price"> <div class="text-gray-100">₹' + prodList[i].product_Price +'</div>' +
                     '</div> </div>  </div>  <div class="product-item__footer"> </div>' +
