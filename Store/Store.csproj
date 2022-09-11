@@ -334,6 +334,7 @@
     <Content Include="assets\js\components\hs.validation.js" />
     <Content Include="assets\js\Content\ContentManagement.js" />
     <Content Include="assets\js\hs.core.js" />
+    <Content Include="assets\js\Product\ProductManagement.js" />
     <Content Include="assets\js\toaster\notific.js" />
     <Content Include="assets\svg\components\wave-bottom-with-dots.svg" />
     <Content Include="assets\svg\preloaders\circle-preloader.svg" />
@@ -520,6 +521,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="General.Master" />
+    <Content Include="Services\Product.asmx" />
     <Content Include="ShopElectronics.aspx" />
     <Content Include="Test.aspx" />
     <Content Include="ViewSwitcher.ascx" />
@@ -586,6 +588,10 @@
     </Compile>
     <Compile Include="General.Master.designer.cs">
       <DependentUpon>General.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Product.asmx.cs">
+      <DependentUpon>Product.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="ShopElectronics.aspx.cs">
       <DependentUpon>ShopElectronics.aspx</DependentUpon>
