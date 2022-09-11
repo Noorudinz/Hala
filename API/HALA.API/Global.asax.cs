@@ -85,6 +85,8 @@ namespace HALA.API
             //container.Register<ApplicationUserManager, ApplicationUserManager>();
             container.Register<BLR.ICustomer, BLI.Customer>(Lifestyle.Scoped);
             container.Register<BLR.IContent, BLI.Content>(Lifestyle.Scoped);
+            container.Register<BLR.IProduct, BLI.Product>(Lifestyle.Scoped);
+
             //container.Register<BLR.IAdmin, BLI.Implementation.Admin>(Lifestyle.Scoped);
             //container.Register<BLR.IDropDowns, BLI.Implementation.DropDowns>(Lifestyle.Scoped);
             //container.Register<BLR.ITravelInsurance, BLI.Implematon.TravelInsurance>(Lifestyle.Scoped);
