@@ -415,7 +415,7 @@
                                                 <label for="rating" class="form-label mb-0">Your Review</label>
                                             </div>
                                             <div class="col-md-8 col-lg-9">
-                                                <a href="#" class="d-block">
+                                                <a href="" class="d-block">
                                                     <div class="text-warning text-ls-n2 font-size-16">
                                                         <small class="far fa-star text-muted"></small>
                                                         <small class="far fa-star text-muted"></small>

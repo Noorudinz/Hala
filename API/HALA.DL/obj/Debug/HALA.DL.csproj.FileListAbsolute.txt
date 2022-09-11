@@ -21,3 +21,10 @@ F:\HALA\HalaWebForms\FrontStoreFrmWrk\API\HALA.DL\obj\Debug\HALA.DL.csprojAssemb
 F:\HALA\HalaWebForms\FrontStoreFrmWrk\API\HALA.DL\obj\Debug\HALA.DL.csproj.CoreCompileInputs.cache
 F:\HALA\HalaWebForms\FrontStoreFrmWrk\API\HALA.DL\obj\Debug\HALA.DL.dll
 F:\HALA\HalaWebForms\FrontStoreFrmWrk\API\HALA.DL\obj\Debug\HALA.DL.pdb
+D:\Softwares\NoorPractice\Hala\API\HALA.DL\bin\Debug\HALA.DL.dll.config
+D:\Softwares\NoorPractice\Hala\API\HALA.DL\bin\Debug\HALA.DL.dll
+D:\Softwares\NoorPractice\Hala\API\HALA.DL\bin\Debug\HALA.DL.pdb
+D:\Softwares\NoorPractice\Hala\API\HALA.DL\obj\Debug\HALA.DL.csproj.CoreCompileInputs.cache
+D:\Softwares\NoorPractice\Hala\API\HALA.DL\obj\Debug\HALA.DL.dll
+D:\Softwares\NoorPractice\Hala\API\HALA.DL\obj\Debug\HALA.DL.pdb
+D:\Softwares\NoorPractice\Hala\API\HALA.DL\obj\Debug\HALA.DL.csproj.AssemblyReference.cache

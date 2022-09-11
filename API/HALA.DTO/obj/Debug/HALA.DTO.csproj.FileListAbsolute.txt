@@ -16,3 +16,12 @@ F:\HALA\HalaWebForms\FrontStoreFrmWrk\API\HALA.DTO\obj\Debug\HALA.DTO.csproj.Cor
 F:\HALA\HalaWebForms\FrontStoreFrmWrk\API\HALA.DTO\obj\Debug\HALA.DTO.csproj.CopyComplete
 F:\HALA\HalaWebForms\FrontStoreFrmWrk\API\HALA.DTO\obj\Debug\HALA.DTO.dll
 F:\HALA\HalaWebForms\FrontStoreFrmWrk\API\HALA.DTO\obj\Debug\HALA.DTO.pdb
+D:\Softwares\NoorPractice\Hala\API\HALA.DTO\bin\Debug\HALA.DTO.dll
+D:\Softwares\NoorPractice\Hala\API\HALA.DTO\bin\Debug\HALA.DTO.pdb
+D:\Softwares\NoorPractice\Hala\API\HALA.DTO\bin\Debug\Newtonsoft.Json.dll
+D:\Softwares\NoorPractice\Hala\API\HALA.DTO\bin\Debug\Newtonsoft.Json.xml
+D:\Softwares\NoorPractice\Hala\API\HALA.DTO\obj\Debug\HALA.DTO.csproj.CoreCompileInputs.cache
+D:\Softwares\NoorPractice\Hala\API\HALA.DTO\obj\Debug\HALA.DTO.csproj.CopyComplete
+D:\Softwares\NoorPractice\Hala\API\HALA.DTO\obj\Debug\HALA.DTO.dll
+D:\Softwares\NoorPractice\Hala\API\HALA.DTO\obj\Debug\HALA.DTO.pdb
+D:\Softwares\NoorPractice\Hala\API\HALA.DTO\obj\Debug\HALA.DTO.csproj.AssemblyReference.cache
