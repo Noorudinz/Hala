@@ -197,5 +197,17 @@ namespace HALA.API.Framework
             });
             return (_mapper = _mapperConfig.CreateMapper());
         }
+
+        public AutoMapper.IMapper GetProductAutoMapper()
+        {
+            _mapperConfig = new AutoMapper.MapperConfiguration(cfg =>
+            {
+
+                cfg.CreateMap<BLO.ProductDetailsResult,
+                        RR.ProductDetails>().ReverseMap();
+
+            });
+            return (_mapper = _mapperConfig.CreateMapper());
+        }
     }
 }

@@ -48,6 +48,7 @@
     <Compile Include="Constants\AdminURI.cs" />
     <Compile Include="Constants\ContentURI.cs" />
     <Compile Include="Constants\CustomerURI.cs" />
+    <Compile Include="Constants\ProductURI.cs" />
     <Compile Include="Constants\UserURI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RequestResponseWrappers\Admin.cs" />
@@ -55,6 +56,7 @@
     <Compile Include="RequestResponseWrappers\Content.cs" />
     <Compile Include="RequestResponseWrappers\Customer.cs" />
     <Compile Include="RequestResponseWrappers\OAuth.cs" />
+    <Compile Include="RequestResponseWrappers\Products.cs" />
     <Compile Include="RequestResponseWrappers\Transaction.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -395,6 +395,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Framework\ApiAuthorizeAttribute.cs" />
     <Compile Include="Framework\ApiResponseWrapper.cs" />
@@ -469,6 +470,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Dependant\" />
+    <Folder Include="Views\Product\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
